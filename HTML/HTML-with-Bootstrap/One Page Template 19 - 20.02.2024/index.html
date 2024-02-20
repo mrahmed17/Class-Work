@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <title>Home index</title>
+
+</head>
+
+<body>
+
+  <!-- nav start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" height="70px"></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home" aria-hidden="true"></i>
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="fa-solid fa-address-card"></i> About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#service" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="fa-solid fa-business-time"></i> Service
+            </a>
+            <ul class="dropdown-menu bg-light ">
+              <li><a class="dropdown-item bg-light " href="#java">JAVA</a></li>
+              <hr class="dropdown-divider">
+              <li><a class="dropdown-item bg-light " href="#python">Python</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item bg-light " href="#c#">C#</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio"><i class="fa-solid fa-briefcase"></i> Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact"><i class="fa-solid fa-id-card-clip"></i> Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#"><i
+                class="fa-regular fa-comment"></i> Feedback</a>
+          </li>
+
+          <div class="btn-group">
+            <a class="btn">Confirm</a>
+            <a href="#" id="drop_thought" role="button" class="dropdown-toggle btn white-text"
+              data-toggle="dropdown">v</a>
+            <ul class="dropdown-menu white-text" id="tools_drop" role="menu" aria- labelledby="drop_thought">
+              <li><a class="btn btn-success white-text">Okay</a></li>
+              <li><a class="btn btn-warning">Unload</a></li>
+              <li><a class="btn btn-danger">Quarantine</a></li>
+              <li class="divider"></li>
+              <li><a class="btn btn-primary">Permanent</a></li>
+            </ul>
+          </div>
+
+
+        </ul>
+
+
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+
+
+  <!-- start carousel -->
+  <div id="carouselExampleAutoplayingDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="2000">
+        <img src="images/1.jpg" class="d-block w-100" alt="Our Success 1" height="500px">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/2.jpg" class="d-block w-100" alt="Our Success 2" height="500px">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/3.jpg" class="d-block w-100" alt="Our Success 3" height="500px">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="images/4.jpg" class="d-block w-100" alt="Our Success 4" height="500px">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- end carousel -->
+
+  <!-- Start about -->
+  <section id="about" class="py-3">
+    <div class="container">
+      <div class="row">
+
+        <div class="text-center mb-3">
+          <h1>About Us</h1>
+          <hr>
+          <h3>Stay With us</h3>
+        </div>
+
+        <div class="col-md-4 d-flex justify-content-center">
+          <img src="images/sir-tim-berners-lee.webp" alt="Admin Info" height="300px" width="300px"
+            class="rounded-circle">
+        </div>
+
+        <div class="col-md-8 mt-3">
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis magni tempore incidunt cum
+            voluptatem deserunt sed odio mollitia illum omnis quaerat rerum reiciendis iusto iste consequuntur
+            officiis, unde vitae!</p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis magni tempore incidunt cum
+            voluptatem deserunt sed odio mollitia illum omnis quaerat rerum reiciendis iusto iste consequuntur
+            officiis, unde vitae!</p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis magni tempore incidunt cum
+            voluptatem deserunt sed odio mollitia illum omnis quaerat rerum reiciendis iusto iste consequuntur
+            officiis, unde vitae!</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- end about -->
+
+  <!-- start service -->
+  <section id="service">
+    <div class="container">
+
+      <div class="text-center mb-3 ">
+        <h1>Service</h1>
+        <hr>
+        <h3>Stay With us</h3>
+      </div>
+
+      <div class="row p-3 d-flex justify-content-center">
+
+        <div id="java" class="col-md-4 d-block ">
+          <img src="images/java.jpg" alt="java" width="200px" height="200px" class="rounded-circle">
+          <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Primary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="python" class="col-md-4">
+          <img src="images/python.png" alt="python" width="200px" height="200px" class="rounded-circle">
+          <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Secondary card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="c#" class="col-md-4 text-center">
+          <img src="images/c.jpg" alt="python" width="200px" height="200px" class="rounded-circle">
+          <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Header</div>
+            <div class="card-body">
+              <h5 class="card-title">Success card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- end service -->
+
+
+  <!-- Start Portfolio -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <div class="text-center mb-3 ">
+          <h1>Portfolio</h1>
+          <hr>
+          <h3>Stay With us</h3>
+        </div>
+
+        <div class="col-md-3 text-center">
+
+          <img src="images/james gosling.jpg" alt="" height="200px" width="200px" class="rounded-circle"> <br>
+          <p class="text-center">James Gosling</p>
+        </div>
+
+        <!-- using accordion -->
+
+        <div class="col-md-9 px-5">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button btn btn-warning" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Education
+                </button>
+              </h2>
+
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                  plugin adds
+                  the appropriate classes that we use to style each element. These classes control the overall
+                  appearance,
+                  as well
+                  as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                  overriding
+                  our
+                  default variables. It's also worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed btn btn-success" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Working Experience
+                </button>
+              </h2>
+
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin
+                  adds the appropriate classes that we use to style each element. These classes control the overall
+                  appearance, as
+                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                  overriding our
+                  default variables. It's also worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed btn btn-primary" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  Personal Life
+                </button>
+              </h2>
+
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                  plugin
+                  adds the appropriate classes that we use to style each element. These classes control the overall
+                  appearance, as
+                  well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or
+                  overriding our
+                  default variables. It's also worth noting that just about any HTML can go within the
+                  <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- End Portfolio -->
+
+  <!-- start contact -->
+  <section id="contact">
+    <div class="row mx-5">
+
+      <div class="text-center mb-3 ">
+        <h1>Say Hello</h1>
+        <hr>
+      </div>
+
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- Mobile device er jonno d-none d-sm-block ei code use korte hobe -->
+
+      <div class="col-md-6 d-none d-sm-block">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.136605410171!2d90.3769410743992!3d23.77814937865144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c74e8282b185%3A0x5e029ded49de5bfc!2sIDB%20Bhaban%2C%20E%2F8-A%2C%20Dhaka%201207!5e0!3m2!1sen!2sbd!4v1708255930501!5m2!1sen!2sbd"
+          width="600" height="250" style="border:2;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- end contact -->
+
+  <!-- Feedback er Jonno Modal use -->
+
+  <div class="modal fade bg-transparent" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Your Feedback</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer bg-dark">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

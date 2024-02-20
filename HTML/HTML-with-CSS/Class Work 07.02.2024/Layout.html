@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Making</title>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    #header {
+      height: 13vh;
+      width: 100%;
+      background-color: darkgreen;
+    }
+
+    #content {
+      width: 100%;
+      height: 100vh;
+      background-color: whitesmoke;
+    }
+
+    #footer {
+      height: 15vh;
+      width: 100%;
+      background-color: blueviolet;
+    }
+
+    nav ul {
+      list-style: none;
+      float: right;
+    }
+
+    nav ul li {
+      margin: 13px 70px 0px 10px;
+      float: left;
+    }
+
+    nav img {
+      width: 50px;
+      margin: 5px 0px 0px 10px;
+    }
+
+    /* নিচের হেডারকে ধরে ধরেও ডিজাইন করা যায় */
+    #header ul li a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 22px;
+    }
+
+    /* নিচের ফুটারকে ধরে ধরেও ডিজাইন করা যায় */
+    #footer ul li a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-weight: 600;
+      font-size: 22px;
+    }
+
+    /* অথবা   */
+
+    /* নিচের কমেন্ট করা স্টাইলেও ডিজাইন করা যায় */
+    /* nav a {
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 22px;
+    } */
+
+    nav a:hover {
+      background-color: red;
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="header">
+    <nav>
+      <a href="home.html" target="content"> <img src="image/idb-bisew.png" alt="iDB-Bisew Logo"></a>
+      <ul>
+        <li><a href="home.html" target="content">Home</a></li>
+        <li><a href="gallery.html" target="content">Gallery</a></li>
+        <li><a href="contact.html" target="content">Contact</a></li>
+        <li><a href="about.html" target="content">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div id="content">
+    <iframe src="" frameborder="0" name="content" width="100%" height="100%"></iframe>
+
+  </div>
+
+  <div id="footer">
+    <nav>
+      <ul>
+        <li><a href="home.html" target="content">Home</a></li>
+        <li><a href="gallery.html" target="content">Gallery</a></li>
+        <li><a href="contact.html" target="content">Contact</a></li>
+        <li><a href="about.html" target="content">About</a></li>
+      </ul>
+    </nav>
+  </div>
+
+
+</body>
+
+</html>
