@@ -6,31 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    * {
-      margin: 0%;
-      padding: 0%;
+    ul li a {
+      color: tomato;
+      font-size: xx-large;
+      text-decoration: none;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-weight: 800;
+      font-style: italic;
     }
 
-    nav li {
-      list-style: none;
+    #content {
+      float: right;
+      width: 70%;
+      height: 100vh;
     }
   </style>
 </head>
 
 <body>
-  <div style="float: left; width: 20%;">
-    <a href="table.html" target="content">Table</a>
-    <a href="Form.html" target="content">Form</a>
-    </nav>
-  </div>
+  <ul>
+    <li>
+      <a href="table.html" target="content">Table</a>
+    </li>
+    <li>
+      <a href="Form.html" target="content">Form</a>
+    </li>
+  </ul>
 
 
-  <div style="float: right; width: 80%;">
-    <div id="content">
+  <div id="content">
+    <iframe src="" frameborder="0" name="content" height="100%" width="100%"></iframe>
 
-      <iframe src="" frameborder="0" name="content" height="100%" width="100%"></iframe>
-
-    </div>
   </div>
 </body>
 
