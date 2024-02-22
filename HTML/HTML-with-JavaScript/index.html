@@ -4,15 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>JavaScriptTutorial</title>
 </head>
 
 <body>
+  <label for="">Number 1</label>
+  <input type="number" id="number1">
+  <p>
+
+    <label for="">Number 2</label>
+    <input type="number" id="number2">
+  <p>
+
+    <input type="button" value="Sum" onclick="doSum()">
 
 
-  <script>
 
-  </script>
+
+    <script>
+      function doSum() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+
+        let num1ToInt = parseFloat(number1);
+        let num2ToInt = parseFloat(number2);
+
+        let result = num1ToInt + num2ToInt;
+
+        document.write(result);
+      }
+    </script>
 </body>
 
 </html>
