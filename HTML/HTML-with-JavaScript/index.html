@@ -5,9 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JavaScriptTutorial</title>
+  <style>
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      color: rgb(255, 3, 129);
+    }
+
+    #number1 {}
+  </style>
 </head>
 
 <body>
+
+  <h1>Your Trusted Calculator</h1>
+
   <label for="">Number 1</label>
   <input type="number" id="number1">
   <p>
@@ -18,6 +30,19 @@
 
     <input type="button" value="Sum" onclick="doSum()">
 
+    <input type="button" value="Substraction" onclick="doSubstraction()">
+
+    <input type="button" value="Multiplication" onclick="doMultiplication()">
+
+    <input type="button" value="Division" onclick="doDivison()">
+
+    <input type="button" value="Exponentiation" onclick="doExponentiation()">
+
+    <input type="button" value="Modulus" onclick="doModulus()">
+
+    <!-- <input type="button" value="Increment" onclick="doIncrement()">
+
+    <input type="button" value="Decrement" onclick="doDecrement()"> -->
 
 
 
@@ -33,6 +58,84 @@
 
         document.write(result);
       }
+      function doSubstraction() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+
+        let num1ToInt = parseFloat(number1);
+        let num2ToInt = parseFloat(number2);
+
+        let result = num1ToInt - num2ToInt;
+
+        document.write(result);
+      }
+      function doMultiplication() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+
+        let num1ToInt = parseFloat(number1);
+        let num2ToInt = parseFloat(number2);
+
+        let result = num1ToInt * num2ToInt;
+
+        document.write(result);
+      }
+      function doDivison() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+
+        let num1ToInt = parseFloat(number1);
+        let num2ToInt = parseFloat(number2);
+
+        let result = num1ToInt / num2ToInt;
+
+        document.write(result);
+      }
+      function doExponentiation() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+
+        let num1ToInt = parseFloat(number1);
+        let num2ToInt = parseFloat(number2);
+
+        let result = num1ToInt ** num2ToInt;
+
+        document.write(result);
+      }
+      function doModulus() {
+        let number1 = document.getElementById('number1').value;
+        let number2 = document.getElementById('number2').value;
+
+        let num1ToInt = parseFloat(number1);
+        let num2ToInt = parseFloat(number2);
+
+        let result = num1ToInt % num2ToInt;
+
+        document.write(result);
+      }
+
+      // function doIncrement() {
+      //   let number1 = document.getElementById('number1').value;
+      //   let number2 = document.getElementById('number2').value;
+
+      //   let num1ToInt = parseFloat(number1);
+      //   let num2ToInt = parseFloat(number2);
+
+      //   let result = num1ToInt ++ num2ToInt;
+
+      //   document.write(result);
+      // }
+      // function doDecrement() {
+      //   let number1 = document.getElementById('number1').value;
+      //   let number2 = document.getElementById('number2').value;
+
+      //   let num1ToInt = parseFloat(number1);
+      //   let num2ToInt = parseFloat(number2);
+
+      //   let result = num1ToInt -- num2ToInt;
+
+      //   document.write(result);
+      // }
     </script>
 </body>
 
