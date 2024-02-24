@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OddEven-Paragraph</title>
+</head>
+
+<body>
+  <label for="">Number</label>
+  <input type="text" id="number"><br>
+
+  <input type="submit" value="Check" onclick="checkOddEven()">
+
+  <p id="result">Your Result is Here</p>
+
+  <script>
+    function checkOddEven() {
+      let userInput = document.getElementById("number").value;
+
+      if (userInput % 2 == 0) {
+        document.getElementById("result").innerHTML = "WOW!! Thit is an Even";
+      }
+
+      else {
+        document.getElementById("result").innerHTML = "WOW!! Thit is an Odd";
+      }
+    }
+
+
+  </script>
+
+</body>
+
+</html>
