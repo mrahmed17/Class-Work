@@ -1,0 +1,22 @@
+table{
+  border: solid tomato 2px;
+  background-color: azure;
+  border-radius: 15px;
+  border-collapse: collapse  ;
+  width: 100%;
+  
+}
+
+th{
+  font: 600;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: blue;
+  text-align: center;
+}
+td{
+  font: 200;
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: tomato;
+}
