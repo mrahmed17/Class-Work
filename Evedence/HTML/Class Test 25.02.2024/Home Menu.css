@@ -1,6 +1,21 @@
-#left{
-  text-align: center;
+a{
+  color: black;
+  text-decoration: none;
   font-size: large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 800;
 }
 
-#
+#left {
+  background-color: aqua;
+  width: 15%;
+  float: left;
+  height: 100vh;
+}
+
+#right{
+  background-color: darkolivegreen;
+  width: 85%;
+  float: right;
+  height: 100vh;
+}
