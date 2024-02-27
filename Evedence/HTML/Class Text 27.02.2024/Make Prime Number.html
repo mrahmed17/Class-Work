@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make Prime Number</title>
+</head>
+
+<body>
+
+
+  <script>
+    let userInput = prompt("Enter Your Number Form Check Prime Number");
+    let count = 0;
+
+    for (let i = 1; i <= userInput; i++) {
+      if (userInput % i == 0) {
+        count += 1;
+      }
+    }
+
+    if (count == 2) {
+      document.write("😊 WoW!! 😊 This is a Prime Number")
+    }
+
+    else {
+      document.write("😥 Sorry!! 😥 This is not a Prime Number")
+    }
+
+  </script>
+
+
+
+  /*
+
+  :ChatGPT Genarate:
+
+  let userInput = prompt("Enter a number to check if it's prime");
+  let count = 0;
+
+  for (let i = 1; i <= userInput; i++) { if (userInput % i==0) { count++; } } if (count==2) { document.write("😊 This is
+    a Prime Number"); } else { document.write("😥 Not a Prime Number"); } </body>
+
+</html>
