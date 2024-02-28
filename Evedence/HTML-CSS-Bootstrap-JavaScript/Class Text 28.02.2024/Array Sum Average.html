@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Sum Average</title>
+</head>
+
+<body>
+
+  <script>
+    let userInput = parseInt(prompt("Enter the item size"));
+    let myArray = 0;
+    let sum = 0;
+
+    for (let item = 0; item < userInput; item++) {
+      let number = prompt("Enter the " + (item + 1) + "item");
+      myArray.push(number);
+    }
+
+    for (let i = 0; i < myArray.length; i++) {
+      sum += parseInt(myArray[i]);
+    }
+
+    let average = sum / myArray.length;
+
+    document.write("Your Sum is: " + sum + "</br>");
+    document.write("Your Average is: " + average);
+
+  </script>
+
+</body>
+
+</html>
