@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Prime Number</title>
+</head>
+
+<body>
+
+
+  <script>
+    let userInput = prompt("Enter Your Number Form Check Prime Number");
+    let count = 0;
+
+    for (let i = 1; i <= userInput; i++) {
+      if (userInput % i == 0) {
+        count += 1;
+      }
+    }
+    if (count == 2) {
+      ;
+      document.write("😀😀 Wow!! " + userInput + "  is a prime number.")
+    }
+
+    else { document.write("😥😥 Sorry!! " + userInput + "  is not a prime number.") }
+
+
+  </script>
+
+
+</html>

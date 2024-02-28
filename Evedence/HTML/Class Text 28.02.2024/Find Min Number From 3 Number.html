@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find Min Number</title>
+</head>
+
+<body>
+
+
+  <script>
+
+    let num1 = parseInt(prompt("Enter First Number"));
+    let num2 = parseInt(prompt("Enter Second Number"));
+    let num3 = parseInt(prompt("Enter Third Number"));
+
+    let minNumber = 0;
+
+    if (num1 < num2 && num1 < num3) {
+      minNumber = num1;
+    }
+    else if (num2 < num1 && num2 < num3) {
+      minNumber = num2;
+    }
+    else {
+      minNumber = num3;
+    }
+
+    document.write("Here is your min number: " + minNumber);
+
+  </script>
+
+</body>
+
+</html>
