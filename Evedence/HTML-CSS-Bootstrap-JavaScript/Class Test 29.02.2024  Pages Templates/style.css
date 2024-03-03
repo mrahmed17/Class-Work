@@ -15,11 +15,13 @@ body {
 	min-height: 300px;
 }
 .carousel-caption {
-	bottom: 220px;
+	bottom: 120px;
 	z-index: 2;
 }
 .carousel-caption h5 {
 	font-size: 45px;
+	color: rgb(14, 192, 14);
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-top: 25px;
@@ -58,7 +60,7 @@ body {
 .navbar-light .navbar-brand {
 	color: #000;
 	font-size: 25px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-weight: bold;
 	letter-spacing: 2px;
 }
@@ -92,9 +94,14 @@ body {
 .team .card-body i {
 	font-size: 20px;
 }
+
+	iframe{
+		width: auto;
+	}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.carousel-caption {
-		bottom: 370px;
+		bottom: 100px;
 	}
 	.carousel-caption p {
 		width: 100%;
@@ -105,19 +112,28 @@ body {
 	.img-area img {
 		width: 100%;
 	}
+	iframe{
+		width: auto;
+	}
+
 }
 @media only screen and (max-width: 767px) {
 	.navbar-nav {
 		text-align: center;
 	}
 	.carousel-caption {
-		bottom: 125px;
+		bottom: 100px;
 	}
 	.carousel-caption h5 {
-		font-size: 17px;
+		font-size: 25px;
+		color: crimson;
+		font-weight: bold;
+	}
+	h6 {
+		font-size: 15px;
 	}
 	.carousel-caption a {
-		padding: 10px 15px;
+		padding: 8px 15px;
 		font-size: 15px;
 	}
 	.carousel-caption p {
@@ -132,3 +148,6 @@ body {
 		margin-bottom: 30px;
 	}
 }
+	iframe{
+		width: min-content;
+	}
