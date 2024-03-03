@@ -95,10 +95,6 @@ body {
 	font-size: 20px;
 }
 
-	iframe{
-		width: auto;
-	}
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.carousel-caption {
 		bottom: 100px;
@@ -111,9 +107,6 @@ body {
 	}
 	.img-area img {
 		width: 100%;
-	}
-	iframe{
-		width: auto;
 	}
 
 }
@@ -148,6 +141,3 @@ body {
 		margin-bottom: 30px;
 	}
 }
-	iframe{
-		width: min-content;
-	}
