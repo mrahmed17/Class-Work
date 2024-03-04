@@ -1,7 +1,7 @@
-
-body{
-  background-image: url(feather.jpg);
+body {
+  background-image: url(img/feather.jpg);
 }
-#navbarSupportedContent{
 
+ul :hover {
+  background-color: crimson;
 }
