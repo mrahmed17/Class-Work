@@ -16,10 +16,12 @@
 </head>
 
 <body>
+  <!-- navbar start -->
   <nav class="navbar navbar-expand-lg navbar-light bg-success fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#"> <img class="height 30px width 20px" src="img/idb-bisew-logo.png" alt=""> <span
-          class="text-warning">IsDB</span><span class="text-white">the</span><span class="text-danger">Builder</span>
+      <a class="navbar-brand" href="#">
+        <img id="logo" src="img/idb-bisew-logo.png" alt="IsDB-BISEW">
+        <span class="text-warning">IsDB</span><span class="text-danger">-</span><span class="text-light">BISEW</span>
       </a>
 
       <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -29,28 +31,34 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-light" href="#"><i class="fa fa-house"></i></a>
+            <a class="nav-link text-light" href="#"><i class="fa fa-house fa-beat-fade"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#about"><i class="fa fa-address-card"></i></a>
+            <a class="nav-link text-light" href="#about"><i class="fa fa-address-card fa-fade"></i> About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#portfolio"><i class="fa-solid fa-briefcase"></i></a>
+            <a class="nav-link text-light" href="#portfolio"><i class="fa-solid fa-briefcase fa-beat-fade"></i>
+              Portfolio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#services"><i class="fa-solid fa-handshake-angle"></i></a>
+            <a class="nav-link text-light" href="#services"><i class="fa-solid fa-handshake-angle fa-beat"></i>
+              Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#team"><i class="fa-solid fa-user-plus"></i></a>
+            <a class="nav-link text-light" href="#team"><i class="fa-solid fa-user-plus fa-bounce"></i> Team</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="#contact"><i class="fa-regular fa-address-book"></i></a>
+            <a class="nav-link text-light" href="#contact"><i class="fa-solid fa-address-book fa-shake"></i></i>
+              contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- navbar end -->
 
+
+  <!-- carousel start -->
   <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
     <div class="carousel-indicators">
       <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators"
@@ -102,15 +110,14 @@
       data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true"
         class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
   </div>
+  <!-- carousel end -->
 
-
-  <!-- about section starts -->
-
+  <!-- about section start -->
   <section class="about section-padding" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-12 col-12">
-          <div class="about-img"><img alt="" class="img-fluid rounded-circle" src="img/about.jpg"></div>
+        <div class="col-lg-4 col-md-12 col-12 mt-md-5">
+          <div class="about-img"><img alt="" class="img-fluid rounded" src="img/about.jpg"></div>
         </div>
 
         <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
@@ -124,13 +131,36 @@
               Assumenda eos quod
               animi! Soluta nesciunt inventore dolores excepturi provident, culpa beatae tempora, explicabo corporis
               quibusdam corrupti. Autem, quaerat. Assumenda quo aliquam vel, nostrum explicabo ipsum dolor, ipsa
-              perferendis porro doloribus obcaecati placeat natus iste odio est non earum?</p><a class="btn btn-warning"
-              href="#">Learn More</a>
+              perferendis porro doloribus obcaecati placeat natus iste odio est non earum? </p>
+            <p class="text-light"> explicabo corporis quibusdam corrupti. Autem, quaerat. Assumenda quo aliquam vel,
+              nostrum explicabo
+              ipsum dolor, ipsa perferendis porro doloribus obcaecati placeat natus iste odio est non earum?</p> <a
+              class="btn btn-warning" href="#">Learn More</a>
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-lg-8 col-md-12 col-12 mt-md-5">
+          <div class="about-img"><img alt="" class="img-fluid rounded" src="img/slogan2.jpg"></div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-12 ps-lg-5 mt-md-5">
+          <div class="about-text">
+            <h2 class="text-warning">Form Fillup Now</h2>
+            <hr class="text-light">
+            <p class="text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, labore reiciendis.
+              Assumenda eos quod
+              animi! Soluta nesciunt inventore dolores excepturi provident, ipsa
+              perferendis porro doloribus obcaecati placeat natus iste odio est non earum? </p><a
+              class="btn btn-warning" href="#">Click Here</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section><!-- about section Ends -->
+  </section>
+  <!-- about section Ends -->
 
 
   <!-- portfolio strats -->
@@ -254,10 +284,10 @@
               <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo
                 tempora esse quibusdam.</p>
               <p class="socials">
-                <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> <a href="#"> <i
-                    class="bi bi-facebook text-white mx-1"></i> </a> <a href="#"><i
-                    class="bi bi-linkedin text-white mx-1"></i></a> <a href="#"><i
-                    class="bi bi-instagram text-white mx-1"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter fa-shake mx-1 text-white"></i> </a>
+                <a href="#"> <i class="fa-brands fa-facebook fa-beat-fade mx-1 text-white"></i> </a>
+                <a href="#"> <i class="fa-brands fa-linkedin fa-shake mx-1 text-white"></i> </a>
+                <a href="#"><i class="fa-brands fa-instagram fa-beat mx-1 text-white"></i></a>
               </p>
             </div>
           </div>
@@ -270,10 +300,10 @@
               <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo
                 tempora esse quibusdam.</p>
               <p class="socials">
-                <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> <a href="#"> <i
-                    class="bi bi-facebook text-white mx-1"></i> </a> <a href="#"><i
-                    class="bi bi-linkedin text-white mx-1"></i></a> <a href="#"><i
-                    class="bi bi-instagram text-white mx-1"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter fa-shake mx-1 text-white"></i> </a>
+                <a href="#"> <i class="fa-brands fa-facebook fa-beat-fade mx-1 text-white"></i> </a>
+                <a href="#"> <i class="fa-brands fa-linkedin fa-shake mx-1 text-white"></i> </a>
+                <a href="#"><i class="fa-brands fa-instagram fa-beat mx-1 text-white"></i></a>
               </p>
             </div>
           </div>
@@ -286,10 +316,10 @@
               <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo
                 tempora esse quibusdam.</p>
               <p class="socials">
-                <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> <a href="#"> <i
-                    class="bi bi-facebook text-white mx-1"></i> </a> <a href="#"><i
-                    class="bi bi-linkedin text-white mx-1"></i></a> <a href="#"><i
-                    class="bi bi-instagram text-white mx-1"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter fa-shake mx-1 text-white"></i> </a>
+                <a href="#"> <i class="fa-brands fa-facebook fa-beat-fade mx-1 text-white"></i> </a>
+                <a href="#"> <i class="fa-brands fa-linkedin fa-shake mx-1 text-white"></i> </a>
+                <a href="#"><i class="fa-brands fa-instagram fa-beat mx-1 text-white"></i></a>
               </p>
             </div>
           </div>
@@ -302,10 +332,10 @@
               <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi ipsam nostrum illo
                 tempora esse quibusdam.</p>
               <p class="socials">
-                <a href="#"><i class="bi bi-twitter text-white mx-1"></i></a> <a href="#"> <i
-                    class="bi bi-facebook text-white mx-1"></i> </a> <a href="#"><i
-                    class="bi bi-linkedin text-white mx-1"></i></a> <a href="#"><i
-                    class="bi bi-instagram text-white mx-1"></i></a>
+                <a href="#"> <i class="fa-brands fa-twitter fa-shake mx-1 text-white"></i> </a>
+                <a href="#"> <i class="fa-brands fa-facebook fa-beat-fade mx-1 text-white"></i> </a>
+                <a href="#"> <i class="fa-brands fa-linkedin fa-shake mx-1 text-white"></i> </a>
+                <a href="#"><i class="fa-brands fa-instagram fa-beat mx-1 text-white"></i></a>
               </p>
             </div>
           </div>
@@ -313,6 +343,7 @@
       </div>
     </div>
   </section><!-- team ends -->
+
 
   <!-- Contact starts -->
   <section class="contact section-padding" id="contact">
@@ -353,12 +384,14 @@
         </div>
 
 
-        <div class="col-md-6 p-6 pt-4 pb-4">
-          <h6 class="text-light">GoogleMap</h6>
-          <iframe class="border border-5 border-primary rounded"
+        <div class="col-md-6 p-5 pt-4 pb-4">
+          <h6 class="text-light"> <i class="fa-solid fa-location-dot fa-bounce text-danger mx-1"></i>
+            IsDB-BISEW, Agargaon,
+            Dhaka
+          </h6>
+          <iframe class="border border-5 border-primary rounded" style="height: 80%; width: 100%;"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.136605410171!2d90.3769410743992!3d23.77814937865144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c74e8282b185%3A0x5e029ded49de5bfc!2sIDB%20Bhaban%2C%20E%2F8-A%2C%20Dhaka%201207!5e0!3m2!1sen!2sbd!4v1709376844230!5m2!1sen!2sbd"
-            height="350" width="400" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
       </div>
@@ -368,24 +401,23 @@
 
 
   <!-- Jump Button -->
-  <div class="fixed-bottom">
+  <div class="fixed-bottom" id="jump">
     <button type="button" class="btn btn-outline-warning">
       <a href="#" class="text-light text-decoration-none"> Jump ⬆ </a>
     </button>
   </div>
-
   <!-- Jump Button End -->
 
 
   <!-- footer starts -->
-  <footer class="bg-success p-2 text-center">
+  <footer class="bg-success p-1 text-center">
     <div class="container">
-
-      <p class="text-white">All Right Reserved By <a class="navbar-brand" href="#"> <span
-            class="text-warning">IsDB</span><span class="text-white">the</span><span class="text-danger">Builder</span>
+      <p class="text-white mt-3" id="copyright">All Right Reserved By <a class="navbar-brand" href="#"> <span
+            class="text-warning">IsDB</span><span class="text-danger">-</span><span class="text-light">BISEW</span>
         </a>
+        <br>
+        Copyright 2024
       </p>
-      <p class="text-white">Copyright 2024</>
     </div>
   </footer>
   <!-- footer ends -->
@@ -393,6 +425,8 @@
 
   <!-- All Js -->
   <script src="js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 
 </html>

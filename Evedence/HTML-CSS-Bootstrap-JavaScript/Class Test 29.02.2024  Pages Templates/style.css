@@ -5,7 +5,17 @@
 	font-family: 'Montserrat', sans-serif;
 }
 body {
-	background: #010145;
+	background: #000022;
+}
+#logo	{
+height: 45px;
+width: 50px;
+}
+#slogan{
+	font-size: x-small;
+	color: white;
+	text-shadow: none;
+	font-weight: light;
 }
 .section-padding {
 	padding: 80px 0;
@@ -93,6 +103,19 @@ body {
 }
 .team .card-body i {
 	font-size: 20px;
+}
+
+#jump{
+position: sticky;
+float: right;
+}
+
+ul :hover{
+	color:crimson;
+}
+
+#copyright{
+	font-size: small;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
