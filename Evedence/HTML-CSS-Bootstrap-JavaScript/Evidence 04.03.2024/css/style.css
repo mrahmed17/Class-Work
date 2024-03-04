@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+}
+
+#iframe {
+  height: 100vh;
+  width: 100%;
+}
+
+ul :hover {
+  color: black;
+  background-color: rgb(150, 87, 124);
+}
+
+#left {
+  padding-top: 20%;
+  background-color: rgb(25, 32, 32);
+  width: 10%;
+  float: left;
+  height: 100vh;
+}
+
+#right {
+  padding: 10%;
+  background-color: lightslategray;
+  width: 90%;
+  float: right;
+  height: 100vh;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 800;
+}
