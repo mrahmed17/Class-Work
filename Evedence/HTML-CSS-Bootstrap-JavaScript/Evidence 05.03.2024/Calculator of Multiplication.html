@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator of Multiplication</title>
+  <style>
+    #first,
+    #second,
+    #multi {
+      font-family: cursive;
+      font-size: larger;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: crimson;
+    }
+
+    #first {
+      color: crimson;
+    }
+
+    #second {
+      color: green;
+    }
+
+    #multi {
+      color: dodgerblue;
+      background-color: yellow;
+      border: solid crimson;
+      border-radius: 25px;
+      margin: 5% 15%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1> Calculator of Multiplication</h1>
+
+  <label id="first" for="">Input Number 1st: </label>
+  <input type="number" id="number1">
+  <p>
+
+    <label id="second" for="">Input Number 2nd: </label>
+    <input type="number" id="number2">
+  <p>
+
+    <input id="multi" type="button" value="Multiplication" onclick="doMultiplication()">
+
+
+
+    <script>
+      function doMultiplication() {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+
+        let num1ToInt = parseInt(number1);
+        let num2ToInt = parseInt(number2);
+
+        let result = num1ToInt * num2ToInt;
+
+        window.alert(result);
+      }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
