@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested For</title>
+</head>
+
+<body>
+
+  <script>
+    // example: 50, 20, 10, 40
+    // step 1 : 20, 50, 10, 40 (First sort will done by 3 step) second sort 2 step and so on.
+    // step 2 : 20, 10, 50, 40   
+    // step 3 : 20, 10, 40, 50
+
+
+
+    for (let left = 1; left <= 5; left++) {
+      //document.write(left);
+      for (let right = 1; right <= 9; right++) {
+        document.write(left);
+        document.write(right + "<br>");
+      }
+    }
+
+  </script>
+
+
+</body>
+
+</html>
