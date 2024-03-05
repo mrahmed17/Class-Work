@@ -10,12 +10,12 @@
 <body>
 
   <script>
-    let userInput = parseInt(prompt("Enter the item size"));
+    let userInput = parseInt(prompt("Enter items number (as many as you can)"));
     let myArray = [];
     let sum = 0;
 
     for (let item = 0; item < userInput; item++) {
-      let number = prompt("Enter the " + (item + 1) + " item ");
+      let number = prompt("Enter the " + (item + 1) + " item number");
       myArray.push(number);
     }
 
