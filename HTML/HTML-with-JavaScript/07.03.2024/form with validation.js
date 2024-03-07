@@ -16,7 +16,7 @@ function submitForm(event) {
   let hobby = document.querySelectorAll('input[name="hobby"]:checked');
 
 
-// nobe/method 1: (for education)
+  // note/method 1: (for education)
   let educationValue = [];
   for (let index = 0; index < education.length; index++) {
     educationValue.push(education[index].value);
@@ -24,7 +24,7 @@ function submitForm(event) {
   }
 
 
-// nobe/method 2: (for education)
+  // note/method 2: (for education)
 
   // let educationValue = [];
   // education.forEach(
@@ -34,7 +34,7 @@ function submitForm(event) {
   // );
 
 
-// nobe/method 1: (for hobby)
+  // note/method 1: (for hobby)
 
   let hobbyValue = [];
   for (let index = 0; index < hobby.length; index++) {
@@ -42,7 +42,7 @@ function submitForm(event) {
   }
 
 
-  // nobe/method 2: (for hobby)
+  // note/method 2: (for hobby)
 
   // let hobbyValue = [];
   // hobby.forEach(
@@ -66,7 +66,55 @@ function submitForm(event) {
     return;
   };
 
-  // email validation  (note: Regular expressions (regEx)) 
+  // idNumber validation
+  if (idNumber == "") {
+    alert("Please Type Id Number");
+    return;
+  }
+
+  // Date of Birth validation 
+  if (date == "") {
+    alert("Date of Birth Must be Select");
+    return;
+  };
+
+  // gender validation 
+  if (gender == null) {
+    alert("Gender must be select");
+    return;
+  };
+
+  // Address validation 
+  if (address == "") {
+    alert("May be you forget to type 'Address'");
+    return;
+  };
+
+  // Education validation 
+  if (education.length == 0) {
+    alert("Select atleast one Education Field");
+    return;
+  };
+
+  // hobby validation 
+  if (hobby.length == 0) {
+    alert("Where is/are Hobby?");
+    return;
+  };
+
+
+  // course validation 
+  if (course === "Select Any") {
+    alert("Select any Course");
+    return;
+  }
+
+  // email validation  (note: Regular expressions (regEx))
+  if (email == "") {
+    alert("May be you forget to type 'Email'");
+    return;
+  };
+
   const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (regEx.test(email)) {
   }
@@ -76,44 +124,28 @@ function submitForm(event) {
     return;
   };
 
-  // password validation 
+  // password validation
+  if (password == "") {
+    alert("Please type password");
+    return;
+  };
+
   if (password.length < 6 || password.length >= 20) {
     alert("Password length must be between 6 to 20 character");
     return;
   };
-  if (confirmPassword.length < 6 || confirmPassword.length >= 20) {
+
+  // confirmPassword validation
+  if (password != confirmPassword) {
     alert("Password does not match");
     return;
   };
 
-  // gender validation 
-  if (gender == null) {
-    alert("Gender must be selected");
-    return;
-  };
-
-  // hobby validation 
-  if (hobby.length == 0) {
-    alert("Select atleast one Hobby");
-    return;
-  };
-
-  // Education validation 
-  if (education.length == 0) {
-    alert("Select atleast one Hobby");
-    return;
-  };
-
-  // course validation 
-  if (course === "Select Any") {
-    alert("Select any Course");
+  // checkConfirm validation
+  if (checkConfirm === 0) {
+    alert("Please Check Me Out");
     return;
   }
-  // Date of Birth validation 
-  if (date == "") {
-    alert("Date of Birth Must be Select");
-    return;
-  };
 
   // Ends Validation from here
 
