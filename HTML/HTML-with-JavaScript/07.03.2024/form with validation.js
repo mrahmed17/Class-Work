@@ -66,7 +66,7 @@ function submitForm(event) {
     return;
   };
 
-  // email validation  (note: regEx means regular express) 
+  // email validation  (note: Regular expressions (regEx)) 
   const regEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (regEx.test(email)) {
   }
