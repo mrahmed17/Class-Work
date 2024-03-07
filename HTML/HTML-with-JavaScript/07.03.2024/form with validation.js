@@ -16,14 +16,16 @@ function submitForm(event) {
   let hobby = document.querySelectorAll('input[name="hobby"]:checked');
 
 
+// nobe/method 1: (for education)
   let educationValue = [];
-
   for (let index = 0; index < education.length; index++) {
     educationValue.push(education[index].value);
 
   }
 
-// nobe: (evabeo education er kaj kora jay)
+
+// nobe/method 2: (for education)
+
   // let educationValue = [];
   // education.forEach(
   //   function (education) {
@@ -31,13 +33,16 @@ function submitForm(event) {
   //   }
   // );
 
+
+// nobe/method 1: (for hobby)
+
   let hobbyValue = [];
   for (let index = 0; index < hobby.length; index++) {
     hobbyValue.push(hobby[index].value);
   }
 
 
-  // nobe: (evabeo hobby er kaj kora jay)
+  // nobe/method 2: (for hobby)
 
   // let hobbyValue = [];
   // hobby.forEach(
