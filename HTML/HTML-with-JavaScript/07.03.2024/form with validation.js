@@ -52,7 +52,9 @@ function submitForm(event) {
   // );
 
 
-  // Start Validation
+
+
+  // Starts Validation from here
   // name validation
   if (rName == "") {
     alert("Name can not be empty");
@@ -113,7 +115,7 @@ function submitForm(event) {
     return;
   };
 
-  // End Validation
+  // Ends Validation from here
 
 
 
