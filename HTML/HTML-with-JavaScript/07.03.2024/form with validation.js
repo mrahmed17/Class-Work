@@ -22,6 +22,8 @@ function submitForm(event) {
     educationValue.push(education[index].value);
 
   }
+
+// nobe: (evabeo education er kaj kora jay)
   // let educationValue = [];
   // education.forEach(
   //   function (education) {
