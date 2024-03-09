@@ -136,7 +136,7 @@ function submitForm(event) {
   };
 
   // confirmPassword validation
-  if (password != confirmPassword) {
+  if (password !== confirmPassword) {
     alert("Password does not match");
     return;
   };
