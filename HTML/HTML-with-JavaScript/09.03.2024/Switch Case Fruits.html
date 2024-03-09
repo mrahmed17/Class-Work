@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch case Fruits</title>
+</head>
+
+<body>
+
+  <script>
+    // method 2: without alphabate case sensitive 
+
+    let fruitsName = prompt("Enter Fruits Name");
+
+    switch (fruitsName.toLocaleLowerCase()) {
+      case 'mango':
+        document.write("Found in Summer");
+        break;
+
+      case 'orange':
+        document.write("Found in Winter");
+        break;
+
+      case 'banana':
+        document.write("Found in Always");
+        break;
+
+      default:
+        document.write("Wrong Input");
+
+    };
+
+
+    /* method 1: with alphabate case sensitive
+    
+        let fruitsNumber = prompt("Enter Fruits Name");
+    
+        switch (fruitsNumber) {
+          case Mango:
+            document.write("Found in Summer");
+            break;
+    
+          case Orange:
+            document.write("Found in Winter");
+            break;
+    
+          case Banana:
+            document.write("Found in always");
+            break;
+    
+          default:
+            document.write("Wrong Input");
+    
+        };
+    
+    */
+  </script>
+
+
+</body>
+
+</html>
