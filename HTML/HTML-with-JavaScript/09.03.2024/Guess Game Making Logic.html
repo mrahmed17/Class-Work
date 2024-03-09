@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess Game Making Logic</title>
+</head>
+
+<body>
+
+
+
+  <script>
+    const computerGuess = parseIn((Math.random() * 100) + 1);
+    let attemp = 0;
+    while (attemp <= 3) {
+      let userGuess = promt("Pls enter ur guess number");
+
+      if (computerGuess == userGuess) {
+        document.write("Congrats U guess the correct number");
+        break;
+      }
+
+      else if (computerGuess < userGuess) {
+        alert("U guess big number");
+        attemp++;
+      }
+
+      else if (computerGuess > userGuess) {
+        alert("U guess small number")
+        attemp++;
+      };
+
+      if (attemp == 3) {
+        document.write("Try Next time <br>");
+        document.write("The number Was " + computerGuess);
+        break;
+      }
+    };
+
+
+
+
+    //method: 1
+
+    /*   const computerGuess = parseIn((Math.random() * 100) + 1);
+   
+       while (computerGuess) {
+         let userGuess = promt("Pls enter ur guess number");
+   
+         if (computerGuess == userGuess) {
+           document.write("Congrats U guess the correct number");
+           break;
+         }
+   
+         else if (computerGuess < userGuess) {
+           alert("U guess big number");
+         }
+   
+         else if (computerGuess > userGuess) {
+           alert("U guess small number")
+         };
+       };*/
+
+  </script>
+
+
+
+</body>
+
+</html>
