@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HFC Making</title>
+</head>
+
+<body>
+
+
+  <script>
+
+    // Method: 4
+    const num1 = parseInt(prompt('Enter the first positive integer: '));
+    const num2 = parseInt(prompt('Enter the second positive integer: '));
+
+    function HCF(p, q) {
+      while (q !== 0) {
+        let temp = q;
+        q = p % q;
+        p = temp;
+      }
+      return p;
+    };
+
+    document.write(HCF(num1, num2));
+
+
+    // // Method: 3
+
+    // const num1 = prompt('Enter the first positive integer: ');
+    // const num2 = prompt('Enter the second positive integer: ');
+
+    // const maxLength = Math.max(num1, num2);
+    // const minLength = Math.min(num1, num2);
+
+    // let hcf;                      // let result
+
+    // for (let i = 1; i <= maxLength && i <= minLength; i++) {
+
+    //   if (maxLength % i === 0 && minLength % i === 0) {
+    //     hcf = i;
+    //   }
+    // }
+
+    // document.write("HCF of " + maxLength + " and " + minLength + " is : " + hcf);
+
+
+    // // Method: 2
+
+    // const num1 = prompt('Enter the first positive integer: ');
+    // const num2 = prompt('Enter the second positive integer: ');
+
+    // let hcf;
+
+    // for (let i = 1; i <= num1 && i <= num2; i++) {
+
+    //   if (num1 % i === 0 && num2 % i === 0) {
+    //     hcf = i;
+    //   }
+    // }
+
+    // document.write("HCF of " + num1 + " and " + num2 + " is : " + hcf);
+
+
+
+    // Method: 1
+    /*
+        let num1 = parseInt(prompt("Enter a first positive integer."));
+        let num2 = parseInt(prompt("Enter a second positive integer."));
+    
+        while (num1 != num2) {
+          if (num1 > num2) {
+            num1 -= num2;
+          }
+          else {
+            num2 -= num1;
+          }
+        }
+        document.write("Your HCF Number is : " + num1);
+    
+    */
+  </script>
+
+</body>
+
+</html>

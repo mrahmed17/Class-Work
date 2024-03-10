@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCM making</title>
+</head>
+
+<body>
+
+  <script>
+
+
+
+
+
+
+    // method: 1
+
+    const number1 = prompt('Enter the first positive integer: ');
+    const number2 = prompt('Enter the second positive integer: ');
+
+    let hcf;
+
+    for (let i = 1; i <= number1 && i <= number2; i++) {
+      if (number1 % i === 0 && number2 % i === 0) {
+        hcf = i;
+      }
+    }
+
+    const lcm = (number1 * number2) / hcf;
+
+
+    document.write("LCM of" + number1 + "and" + number2 + "is" + lcm);
+
+
+  </script>
+
+
+</body>
+
+</html>
