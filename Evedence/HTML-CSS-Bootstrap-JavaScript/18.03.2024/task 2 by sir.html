@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email by alert</title>
+</head>
+
+<body>
+
+  <script>
+    let email = prompt("enter your email address.");
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (pattern.test(email)) {
+      alert("Correct email address");
+    }
+    else {
+      alert("Wrong email address");
+    }
+
+  </script>
+
+</body>
+
+</html>
