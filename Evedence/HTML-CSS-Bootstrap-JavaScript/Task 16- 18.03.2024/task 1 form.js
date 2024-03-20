@@ -22,12 +22,12 @@ function submitForm(event) {
   }
 
   if (contact == '') {
-    alert('Please Type your contact Number');
+    alert('Please type your contact number');
     return;
   }
 
   if (remarks == '') {
-    alert('Please Type your remarks here');
+    alert('Please type your remarks here');
     return;
   }
 
@@ -47,11 +47,11 @@ function submitForm(event) {
   }
 
   let output = 'Full Name: ' + fNam + '\n';
-  output = 'Contact: ' + contact + '\n';
-  output = 'Remarks: ' + remarks + '\n';
+  output += 'Contact: ' + contact + '\n';
+  output += 'Remarks: ' + remarks + '\n';
   output += 'Gender: ' + gender.value + '\n';
-  output = 'Course: ' + course + '\n';
-  output = 'Location: ' + location + '\n';
+  output += 'Course: ' + courseValue + '\n';
+  output += 'Location: ' + location + '\n';
 
   let newWindow = window.open('', '_blank');
   newWindow.document.write('<pre>' + output + '</pre>');
