@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form Validatin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <form id="myForm" name=form">
+      <h1>
+        <caption>Form Validatin</caption>
+      </h1> <br>
+
+      <label for="">Name:</label>
+      <input class="form-control" type="text" id="name"> <br>
+
+      <label for="">Contact:</label>
+      <input class="form-control" type="text" id="contact"> <br>
+
+      <label for="">Remarks:</label>
+      <textarea class="form-control" id="remarks" cols="30" rows="5"></textarea> <br>
+
+      <div class="col-md-6">
+        <label for="">Gender:</label>
+        <input class="form-check-input" type="radio" name="gender" value="Male">Male
+        <input class="form-check-input" type="radio" name="gender" value="Female">Female
+      </div>
+      <div class="col-md-6">
+        <label for="">Course List: </label>
+        <input class="form-check-input" type="checkbox" name="course" value="NT">NT
+        <input class="form-check-input" type="checkbox" name="course" value="IAD">IAD
+        <input class="form-check-input" type="checkbox" name="course" value="DDD">DDD
+        <input class="form-check-input" type="checkbox" name="course" value="ESAD">ESAD
+
+      </div>
+
+      <div class="col-md-3">
+        <label for="">Location:</label>
+        <select class="form-control" id="location">
+          <option value="Select Any">Select Any</option>
+          <option value="Banani ">Banani </option>
+          <option value="Dhanmondi ">Dhanmondi </option>
+          <option value="Mirpur">Mirpur</option>
+        </select>
+      </div>
+      <br>
+
+      <button class="btn btn-primary" type="submit">Submit</button>
+
+    </form>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+      let rName = document.getElementById('name').value;
+      let contact = document.getElementById('contact').value;
+      let remarks = document.getElementById('remarks').value;
+      let gender = document.querySelector('input[name="gender"]:checked');
+      let course = document.querySelectorAll('input[name="course"]:checked');
+      let location = document.getElementById('location').value;
+
+      let courseValue = [];
+      for (let index = 0; index < course.length; index++) {
+        courseValue.push(course[index].value);
+      };
+
+      if (rName == '') {
+        alert('Name can not be empty');
+        return;
+      } else if (rName <= 3) {
+        alert('Name must have atleast 4 charecter');
+        return;
+      }
+
+      if (contact == '') {
+        alert('Please type your contact number');
+        return;
+      }
+
+      if (remarks == '') {
+        alert('Please type your remarks here');
+        return;
+      }
+
+      if (gender == null) {
+        alert('Gender must be select');
+        return;
+      }
+
+      if (location == '') {
+        alert("May be you forget to type 'Location'");
+        return;
+      }
+
+      if (course.length == 0) {
+        alert('Select any Course');
+        return;
+      }
+
+      let output = 'Full Name: ' + rName + '\n';
+      output += 'Contact: ' + contact + '\n';
+      output += 'Remarks: ' + remarks + '\n';
+      output += 'Gender: ' + gender.value + '\n';
+      output += 'Course: ' + courseValue + '\n';
+      output += 'Location: ' + location + '\n';
+
+      let newWindow = window.open('', '_blank');
+      newWindow.document.write('<pre>' + output + '</pre>');
+    };
+
+    let myForm = document.getElementById('myForm');
+    myForm.addEventListener('submit', submitForm);
+
+
+
+  </script>
+
+</body>
+
+</html>
