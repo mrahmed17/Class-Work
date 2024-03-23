@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make the Number is Prime or not</title>
+</head>
+
+<body>
+
+
+  <script>
+    let userInput = prompt("Enter Your Number Form Check Prime Number");
+    let calc = 0;
+
+    for (let i = 1; i <= userInput; i++) {
+      if (userInput % i == 0) {
+        calc += 1;
+      }
+    }
+
+    if (calc == 2) {
+      document.write("This is a Prime Number")
+    }
+
+    else {
+      document.write("This is not a Prime Number")
+    }
+
+  </script>
+
+</html>

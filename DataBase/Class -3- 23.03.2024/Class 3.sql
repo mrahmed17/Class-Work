@@ -40,4 +40,29 @@ where SUBSTR(job_id,4)='REP';
 SELECT employee_id, Concat(first_name,last_name) NAME, Length (last_name),
 Instr(last_name, 'a') "Contains 'a'?"
 from employees
-where substr(last_name, -1,1)='n';
+where substr(last_name, -1,3)='n';
+
+SELECT
+    * FROM employees;
+    
+--Using Character-Manipulation Function for finding it programmer
+select CONCAT(CONCAT(last_name, '''s job category is '), job_id)
+"Job Details" from employees
+where SUBSTR(job_id,1,2)='IT';
+
+--or another method
+SELECT
+    * FROM employees
+    where substr(job_id,1,2)='IT';
+    
+
+select first_name,
+lower(concat(substr(first_name,2,2),'IT'))
+from employees
+where first_name =INITCAP('payam');
+
+
+select first_name,
+lower(concat(substr(first_name,2,2),'IT'))
+from employees
+where first_name=initcap('Payam');
