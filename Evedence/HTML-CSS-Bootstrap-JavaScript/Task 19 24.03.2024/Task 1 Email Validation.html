@@ -11,12 +11,13 @@
 
   <script>
     let userInput = prompt('Enter your email address');
-    const sample = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (sample.text(userInput)) {
+    if (pattern.text(userInput)) {
       alert("Congrats, Write email address");
 
-    } else {
+    }
+    else {
       alert("Invalid email address");
     }
 
