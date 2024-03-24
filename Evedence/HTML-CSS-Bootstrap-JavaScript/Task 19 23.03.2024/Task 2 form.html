@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+</head>
+
+<body>
+  <form id="myForm" name="form">
+    <label for="">Full Name:</label>
+    <input type="text" id="name"> <br>
+
+    <label for="">Contact: </label>
+    <input type="text" id="contact"> <br>
+
+    <label for="">Remarks</label>
+    <textarea name="" id="remarks" cols="30" rows="2"></textarea> <br>
+
+    <label for="">Gender: </label>
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female <br>
+
+    <label for="">Course: </label>
+    <input type="checkbox" name="course" value="NT">NT
+    <input type="checkbox" name="course" value="DDD">DDD
+    <input type="checkbox" name="course" value="JEE">JEE
+    <input type="checkbox" name="course" value="GAV">GAV <br>
+
+    <label for="">Location: </label>
+    <select name="Location" id="location">
+      <option value="Select Any"> Select Any</option>
+      <option value="Banani">Banani</option>
+      <option value="Dhanmondi">Dhanmondi</option>
+      <option value="Mirpur">Mirpur</option>
+    </select> <br>
+
+    <button type="submit" name="submit" id="submit">Submit </button>
+
+  </form>
+
+  <script>
+    function submitForm(event) {
+      event.preventDefault();
+
+      let rNam = document.getElementById("name").value;
+      let contact = document.getElementById("contact").value;
+      let remarks = document.getElementById("remarks").value;
+      let location = document.getElementById("location").value;
+      let gender = document.querySelector("input[name='gender']:checked");
+      let course = document.querySelectorAll("input[name='course']:checked");
+
+      let courseValue = [];
+      for (let i = 0; i < course.length; i++) {
+        courseValue.push(course[i].value);
+      };
+
+
+      if (rNam == "") {
+        alert("Enter your name");
+        return;
+      } else if (rNam <= 3) {
+        alert("Name must be 4 letter");
+        return;
+      }
+
+      if (contact == "") {
+        alert("Enter contact Num")
+        return;
+      };
+
+      if (remarks == "") {
+        alert("Type remarks")
+        return;
+      }
+
+      if (gender == null) {
+        alert("select gender");
+        return;
+      };
+
+      if (course.length == 0) {
+        alert("select any course");
+        return;
+      };
+
+      if (location == "") {
+        alert("Select location");
+        return;
+      };
+
+      let output = "Full Name: " + rNam + "\n";
+      output += "Contact: " + contact + "\n";
+      output += "Remarks: " + remarks + "\n";
+      output += "Gender: " + gender.value + "\n";
+      output += "Course: " + courseValue + "\n";
+      output += "Location: " + location + "\n";
+
+
+      let newWindow = window.open("", "_blank");
+      newWindo = document.write("<pre>" + output + "</pre>");
+    };
+
+    let myForm = document.getElementById("myForm");
+    myForm.addEventListener("submit", submitForm);
+
+
+  </script>
+
+</body>
+
+</html>

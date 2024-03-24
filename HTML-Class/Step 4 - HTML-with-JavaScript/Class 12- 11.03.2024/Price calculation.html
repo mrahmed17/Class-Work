@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculation</title>
+</head>
+
+<body>
+  <div>
+    <div class="col-md-6">
+      <label for="">Unit Price</label>
+      <input type="number" id="unitPrice" oninput="getTotalPrice()" onchange="getActualPrice()">
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Quantity</label>
+      <input type="number" id="quantity" onchange="getTotalPrice()" onchange="getActualPrice()">
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Total Price</label>
+      <input type="number" id="totalPrice">
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Discount</label>
+      <input type="number" id="discount" oninput="getActualPrice()" onchange="getActualPrice()">
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Discount Amount</label>
+      <input type="number" id="discountAmount">
+    </div> <br>
+
+    <div class="col-md-6">
+      <label for="">Actual Price</label>
+      <input type="number" id="actualPrice">
+    </div> <br>
+  </div>
+
+  <script>
+
+    function getTotalPrice() {
+      let unitPrice = document.getElementById("unitPrice").value;
+      let quantity = document.getElementById("quantity").value;
+      let totalPrice = document.getElementById("totalPrice").value;
+
+      totalPrice = unitPrice * quantity;
+      document.getElementById("totalPrice").value = totalPrice;
+    };
+
+    function getActualPrice() {
+      let totalPrice = document.getElementById("totalPrice").value;
+      let discount = document.getElementById("discount").value;
+      let actualPrice = document.getElementById("actualPrice").value;
+
+      actualPrcice2 = totalPrice - (totalPrice * discount) / 100;
+      document.getElementById("actualPrice").value = actualPrcice2;
+
+      // For Testing the coding Purpose.
+      // console.log(actualPrice);
+
+      disAmnt = (totalPrice * discount) / 100;
+      document.getElementById("discountAmount").value = disAmnt;
+
+    };
+
+
+  </script>
+
+</body>
+
+</html>
