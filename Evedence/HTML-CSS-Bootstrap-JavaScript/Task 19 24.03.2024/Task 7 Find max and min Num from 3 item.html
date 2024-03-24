@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find max and min Num from 3 item</title>
+</head>
+
+<body>
+
+  <script>
+    let num1 = parseInt(prompt("Enter 1st Number"));
+    let num2 = parseInt(prompt("Enter 2nd Number"));
+    let num3 = parseInt(prompt("Enter 3rd Number"));
+
+    let maxNum = 0;
+    let minNum = 0;
+
+    if (num1 > num2 && num1 > num3) {
+      maxNum = num1;
+    } else if (num2 > num1 && num2 > num3) {
+      maxNum = num2;
+    }
+    else {
+      maxNum = num3;
+    }
+
+
+    if (num1 < num2 && num1 < num3) {
+      minNum = num1;
+    } else if (num2 < num1 && num2 < num3) {
+      minNum = num2;
+    }
+    else {
+      minNum = num3;
+    }
+
+    document.write("This is Max Num: " + maxNum + "<br>");
+    document.write("This is Min Num: " + minNum);
+
+
+  </script>
+
+</body>
+
+</html>

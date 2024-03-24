@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial</title>
+</head>
+
+<body>
+
+  <script>
+    let userInput = prompt("Enter your number");
+    let defaultFac = 0;
+
+    for (let i = userInput; i > 1; i--) {
+      defaultFac *= i;
+    }
+    document.write("The Factorial" + userInput + "is" + defaultFac);
+  </script>
+
+</body>
+
+</html>

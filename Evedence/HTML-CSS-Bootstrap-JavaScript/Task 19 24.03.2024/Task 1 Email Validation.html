@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Validation</title>
+</head>
+
+<body>
+
+  <script>
+    let userInput = prompt('Enter your email address');
+    const defaultValue = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (defaultValue.test(userInput)) {
+      alert("Congrats, Correct email address");
+    }
+    else {
+      alert("Invalid email address");
+    }
+
+  </script>
+
+</body>
+
+</html>

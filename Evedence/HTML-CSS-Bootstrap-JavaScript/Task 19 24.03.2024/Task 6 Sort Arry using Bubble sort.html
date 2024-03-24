@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Sort</title>
+</head>
+
+<body>
+
+  <script>
+    let userInput = parseInt(prompt("Enter Your Num"));
+    let myAr = [];
+
+    for (let i = 0; i <= userInput; i++) {
+      let num1 = prompt("Enter the " + (i + 1) + " random number");
+      myAr.push(num1);
+    }
+
+    document.write("Your Input Number is: " + myAr);
+
+    for (let first = 0; first < myAr.length; first++) {
+
+      for (let second = 0; second < myAr.length - first - 1; second++) {
+
+        if (parseInt(myAr[second]) > parseInt(myAr[second + 1])) {
+
+          let temp = parseInt(myAr[second]);
+          myAr[second] = parseInt(myAr[second + 1]);
+          myAr[second + 1] = temp;
+        }
+      }
+    }
+    document.write("<br> Our System Sort This: " + myAr);
+
+
+  </script>
+
+</body>
+
+</html>
