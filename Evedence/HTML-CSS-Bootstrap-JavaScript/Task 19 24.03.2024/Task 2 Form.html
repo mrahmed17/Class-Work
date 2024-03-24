@@ -36,15 +36,14 @@
       <option value="Mirpur">Mirpur</option>
     </select> <br>
 
-    <button type="submit" name="submit" id="submit">Submit </button>
+    <button type="submit" value="submit" onclick="submitForm()">Submit </button>
 
   </form>
 
   <script>
-    function submitForm(event) {
-      event.preventDefault();
+    function submitForm() {
 
-      let rNam = document.getElementById("name").value;
+      let fname = document.getElementById("name").value;
       let contact = document.getElementById("contact").value;
       let remarks = document.getElementById("remarks").value;
       let location = document.getElementById("location").value;
@@ -57,10 +56,10 @@
       };
 
 
-      if (rNam == "") {
+      if (fname == "") {
         alert("Enter your name");
         return;
-      } else if (rNam <= 3) {
+      } else if (fname <= 3) {
         alert("Name must be 4 letter");
         return;
       }
@@ -90,7 +89,7 @@
         return;
       };
 
-      let output = "Full Name: " + rNam + "\n";
+      let output = "Full Name: " + fname + "\n";
       output += "Contact: " + contact + "\n";
       output += "Remarks: " + remarks + "\n";
       output += "Gender: " + gender.value + "\n";
@@ -99,11 +98,8 @@
 
 
       let newWindow = window.open("", "_blank");
-      newWindo = document.write("<pre>" + output + "</pre>");
-    };
-
-    let myForm = document.getElementById("myForm");
-    myForm.addEventListener("submit", submitForm);
+      newWindow.document.write("<pre>" + output + "</pre>");
+    }
 
 
   </script>
