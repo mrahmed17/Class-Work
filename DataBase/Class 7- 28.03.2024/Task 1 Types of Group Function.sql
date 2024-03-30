@@ -3,7 +3,7 @@
 select MAX(salary) "Maximum"
   FROM employees;
   
-select MIN(salary) "Min"
+select MIN(salary) "Minimum"
   FROM employees;
   
   
