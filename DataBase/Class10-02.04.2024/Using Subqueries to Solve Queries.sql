@@ -8,8 +8,8 @@ select last_name, hire_date
 from employees
 where hire_date >
                 (select hire_date 
-                from employees 
-                where last_name='Davies')
+                        from employees 
+                                where last_name='Davies')
 order by last_name;
 
 --Practice
@@ -17,8 +17,8 @@ select last_name, hire_date
 from employees
 where hire_date <
                 (select hire_date
-                from employees 
-                where last_name='Davies')
+                        from employees 
+                                where last_name='Davies')
 order by last_name;
 
 --Practice
@@ -26,8 +26,8 @@ select last_name, hire_date
 from employees
 where hire_date =
                 (select hire_date
-                from employees
-                where last_name='Davies')
+                        from employees
+                                where last_name='Davies')
 order by last_name;
 
 
@@ -37,8 +37,8 @@ select first_name, hire_date
 from employees
 where hire_date >  
                 (select hire_date
-                from employees 
-                where first_name='Curtis')
+                        from employees 
+                                where first_name='Curtis')
 order by first_name;
 
 --Practice
@@ -46,8 +46,8 @@ select first_name, hire_date
 from employees
 where hire_date <
                     (select hire_date
-                    from employees
-                    where first_name='Curtis')
+                            from employees
+                                    where first_name='Curtis')
 order by first_name;
 
 --Practice
@@ -55,8 +55,8 @@ select first_name, hire_date
 from employees
 where hire_date =
                 (select hire_date
-                from employees
-                where first_name='Curtis')
+                        from employees
+                                where first_name='Curtis')
 order by first_name;
 
 
@@ -65,21 +65,21 @@ SELECT last_name, job_id, salary
 FROM employees
 WHERE job_id =
             (SELECT job_id 
-            FROM employees
-            WHERE last_name = 'Taylor'
-            FETCH first 1 ROW only)
+                    FROM employees
+                            WHERE last_name = 'Taylor'
+                                    FETCH first 1 ROW only)
 AND salary >
             (SELECT salary
-            FROM employees
-            WHERE last_name = 'Taylor'
-            FETCH first 1 ROW only);
+                    FROM employees
+                            WHERE last_name = 'Taylor'
+                                    FETCH first 1 ROW only);
 
 --Using Group Functions in a Subquery
 SELECT last_name, job_id, salary
 FROM employees
 WHERE salary =
                 (SELECT MIN(salary)
-                FROM employees);
+                        FROM employees);
 
 --Using Group Functions in a Subquery
 SELECT department_id, MIN(salary)
@@ -104,14 +104,15 @@ HAVING MIN(salary) >
 SELECT employee_id, last_name
 FROM employees
 WHERE salary =
-            (SELECT MIN(salary)
-                FROM employees
-                    GROUP BY department_id);  --This Query Will Show Error. bcz subquery 'group by' provide multiple row but main query show single query
+            (SELECT MIN(salary)                 --This Query Result Will Show Error.
+                FROM employees                        --Bcz subquery 'group by' provide multiple row
+                    GROUP BY department_id);                 -- but main query required single query result from subquery.
+                                        
 
---Subquery returns no rows because there is no employee named ìHaas.î 
+--Subquery returns no rows because there is no employee named ‚ÄúHaas.‚Äù 
 SELECT last_name, job_id
 FROM employees
 WHERE job_id =
-            (SELECT job_id
-                FROM employees
-                    WHERE last_name = 'Haas'); --This Query Will Show black result. bcz subquery 'where' last_name = 'Haas' is not available on the table
+            (SELECT job_id                        --This Query Will Show blank result (Only Title).
+                FROM employees                        --Bcz subquery ('where' last_name = 'Haas') is not available on that table.
+                    WHERE last_name = 'Haas');  
