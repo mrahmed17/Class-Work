@@ -3,7 +3,7 @@
         --Main query: Determine the names of all employees who were hired after Davies?
                 --Subquery:When was Davies hired?
                 
---order by last name
+--Order by last name
 select last_name, hire_date
 from employees
 where hire_date >
@@ -109,7 +109,7 @@ WHERE salary =
                     GROUP BY department_id);                 -- but main query required single query result from subquery.
                                         
 
---Subquery returns no rows because there is no employee named “Haas.” 
+--Subquery returns no rows because there is no employee named ('Haas'.)
 SELECT last_name, job_id
 FROM employees
 WHERE job_id =
