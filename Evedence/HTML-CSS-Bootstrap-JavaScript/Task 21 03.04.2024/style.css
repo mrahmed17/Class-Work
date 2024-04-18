@@ -1,0 +1,52 @@
+ #unitPrice,
+    #quantity,
+    #totalPrice,
+    #discount,
+    #discountAmount,
+    #actualPrice {
+      font-family: cursive;
+      font-size: larger;
+      font-weight: bold;
+    }
+
+    h1 {
+      color: crimson;
+      border-radius: 25px;
+    }
+
+    #unitPrice {
+      color: rgb(0, 121, 117);
+      border: solid crimson;
+      border-radius: 25px;
+    }
+
+    #quantity {
+      color: rgb(0, 99, 138);
+      border: solid crimson;
+      border-radius: 25px;
+    }
+
+    #totalPrice {
+      color: rgba(132, 84, 0, 0.776);
+      border: solid crimson;
+      border-radius: 25px;
+    }
+
+    #discount {
+      color: rgb(165, 9, 66);
+      border: solid crimson;
+      border-radius: 25px;
+    }
+
+    #discountAmount {
+      color: rgb(0, 90, 0);
+      border: solid crimson;
+      border-radius: 25px;
+    }
+
+    #actualPrice {
+      color: rgb(0, 72, 144);
+      background-color: aquamarine;
+      border: solid crimson;
+      border-radius: 25px;
+    }
