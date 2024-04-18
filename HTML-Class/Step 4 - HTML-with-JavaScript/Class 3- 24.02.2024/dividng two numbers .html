@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // JavaScript code to dividng two numbers starting from inputNubeer and secondNumber
+
+    // Get user input
+    const inputNumber = parseInt(prompt("Enter a Number For Deviding"));
+
+    let secondNumber = parseInt(prompt("Enter your Even Number"))
+
+    // Initialize a counter for even numbers
+    let evenCount = 0;
+
+    // Start from userInput and increment by secondNumber until reaching the input number
+    for (let i = secondNumber; i <= inputNumber; i += secondNumber) {
+      evenCount++;
+    }
+
+    // Display the result
+    document.write(`The Deviding Result is ${evenCount} from the numbers between  ${secondNumber} and ${inputNumber}.`);
+
+  </script>
+</body>
+
+</html>
