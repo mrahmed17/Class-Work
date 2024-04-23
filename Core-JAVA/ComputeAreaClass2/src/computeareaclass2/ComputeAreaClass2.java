@@ -32,23 +32,23 @@ public class ComputeAreaClass2 {
 //        System.out.println("Area of Rectangular is " + area);
 //
 //Total Number Calculator
-//        Scanner input = new Scanner(System.in);
-//        System.out.println("Please enter First Number:");
-//        double first = input.nextDouble();
-//
-//        System.out.println("Please enter Second Number:");
-//        double second = input.nextDouble();
-//
-//        System.out.println("Please enter Second Number:");
-//        double third = input.nextDouble();
-//
-//        System.out.println("Please enter Second Number:");
-//        double fourth = input.nextDouble();
-//
-//        double total;
-//
-//        total = first + second + third + fourth;
-//        System.out.println("Your Total Value is " + total);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Please enter First Number:");
+        double first = input.nextDouble();
+
+        System.out.println("Please enter Second Number:");
+        double second = input.nextDouble();
+
+        System.out.println("Please enter Second Number:");
+        double third = input.nextDouble();
+
+        System.out.println("Please enter Second Number:");
+        double fourth = input.nextDouble();
+
+        double total;
+
+        total = first + second + third + fourth;
+        System.out.println("Your Total Value is " + total);
     }
 
 }
