@@ -99,7 +99,7 @@ public class RandomPasswordGenarator {
         System.out.println(finalPassword);
         */
         
-        //Method 3: Using Method Formula
+        //Method 3: Using Method Formula by sir
 
                 Scanner s = new Scanner(System.in);
 
