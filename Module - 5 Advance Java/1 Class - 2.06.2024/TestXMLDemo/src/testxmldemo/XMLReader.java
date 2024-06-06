@@ -19,7 +19,7 @@ public class XMLReader {
             DocumentBuilder builder = factory.newDocumentBuilder();
 
             // Parse the XML file to create a Document object
-            Document document = builder.parse("Student_2.xml");
+            Document document = builder.parse("student.xml");
 
             // Normalize the XML structure
             document.getDocumentElement().normalize();
