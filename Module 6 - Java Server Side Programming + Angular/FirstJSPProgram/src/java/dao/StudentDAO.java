@@ -12,6 +12,8 @@ public class StudentDAO {
     
     public static int saveStudent(){
     
+        sql="insert into student (name, email, address, cell) values(?,?,?,?)";
+        return 0;
     
     } 
     

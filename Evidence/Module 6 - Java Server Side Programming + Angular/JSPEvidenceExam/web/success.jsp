@@ -6,8 +6,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-         <h1 style="color: darkcyan; text-align: center">Data Save Successful</h1>
-         <%@include  file="employeeaddform.jsp"%>
-
+        <h1 style="color: greenyellow; text-align: center">Data Save Successful</h1>
+        
+        <%@include  file="viewallstudent.jsp"%>
     </body>
 </html>
