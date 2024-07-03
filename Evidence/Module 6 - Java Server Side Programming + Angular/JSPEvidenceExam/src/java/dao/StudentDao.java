@@ -109,7 +109,8 @@ public class StudentDao {
 
             while (rs.next()) {
 
-                s = new Student(rs.getInt("id"),
+                s = new Student(
+                        rs.getInt("id"),
                         rs.getString("name"),
                         rs.getString("email"),
                         rs.getString("address"),
