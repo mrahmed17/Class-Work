@@ -1,7 +1,10 @@
 <jsp:include page="header.jsp" />
 
-<div>
-	<h1>Hello Babies!!</h1>
+<div class="container">
+
+<h1> Hello Dear "User Name"</h1>
+
+	<%=new java.util.Date()%>
 </div>
 
 
