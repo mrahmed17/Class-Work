@@ -1,9 +1,8 @@
 <jsp:include page="header.jsp" />
 
-
 <div class="container">
 
-<h1 class="text-center">Registration Form</h1>
+	<h1 class="text-center">Registration Form</h1>
 
 
 	<form action="savestudent.jsp" method="post">
@@ -15,11 +14,13 @@
 		</div>
 		<div class="mb-3">
 			<label for="exampleInputPassword1" class="form-label">Email</label> <input
-				type="email" class="form-control" id="exampleInputPassword1" name="email">
+				type="email" class="form-control" id="exampleInputPassword1"
+				name="email">
 		</div>
 		<div class="mb-3">
 			<label for="exampleInputPassword1" class="form-label">Address</label>
-			<input type="text" class="form-control" id="exampleInputPassword1" name="address">
+			<input type="text" class="form-control" id="exampleInputPassword1"
+				name="address">
 		</div>
 		<div class="mb-3">
 			<label for="exampleInputPassword1" class="form-label">Cell

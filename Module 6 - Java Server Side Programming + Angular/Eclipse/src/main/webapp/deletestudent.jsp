@@ -7,6 +7,7 @@
 <% 
 
 StudentDao.deleteStudent(s);
+
 response.sendRedirect("viewallstudent.jsp");
 
 %>

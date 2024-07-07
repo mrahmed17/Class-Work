@@ -1,19 +1,23 @@
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 
 <%@page import="model.Student"%>
+
 <%@page import="dao.StudentDao"%>
+
 <%@page import="java.util.*"%>
 
 
 <%
 List<Student> list = StudentDao.viewAllStudent();
+
 request.setAttribute("list", list);
 %>
 
 <jsp:include page="header.jsp" />
+
 <div class="container text-center">
 
-	<h1 class="text-center my-2">All Student</h1>
+	<h1 class="text-center my-2">Registered Student</h1>
 
 	<table class="table table-striped">
 		<thead>

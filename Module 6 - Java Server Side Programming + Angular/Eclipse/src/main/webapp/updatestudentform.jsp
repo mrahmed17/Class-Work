@@ -1,4 +1,5 @@
 <%@page  import="model.Student"%>
+
 <%@page  import="dao.StudentDao"%>
 
 
@@ -9,42 +10,41 @@ Student s=StudentDao.getById(Integer.parseInt(id));
 
 %>
 
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body style="color: cyan; background-color: black">
-        <h1 style="text-align: center">Student Update Form</h1>
-
-        <form action="updatestudent.jsp" method="post" style="text-align: center">
-
-            <input type="hidden" name="id" value="<%=s.getId()%>">
-
-            Name: <input type="text" name="name" value="<%=s.getName()%>"> <br>
-            Email: <input type="email" name="email" value="<%=s.getEmail()%>"> <br>
-            Address: <input type="text" name="address" value="<%=s.getAddress()%>"> <br>
-            Cell No: <input type="text" name="cell" value="<%=s.getCell()%>"> <br>
-
-            <input type="submit" value="Save">
-
-        </form>
-
-        <div style="font-size: 20px; color: crimson; text-align:center;">
-            <br>
-            <br>
-            <br>
-            <br>
-            <a href="home.jsp" style="color: aqua">Home</a>
-            <br>
-            <br>
-            <a href="viewallstudent.jsp" style="color: aqua">View Student Data</a>
-
-        </div>
+<jsp:include page="header.jsp" />
 
 
-    </body>
-</html>
+
+<div class="container">
+
+	<form action="updatestudent.jsp" method="post">
+	
+		<input type="hidden" name="id" value="<%=s.getId()%>">
+		<div class="mb-3">
+			<label for="exampleInputEmail1" class="form-label">Name</label> <input
+				type="text" class="form-control" id="exampleInputEmail1"
+				aria-describedby="emailHelp" name="name" value="<%=s.getName()%>">
+
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Email</label> <input
+				type="email" class="form-control" id="exampleInputPassword1" name="email"  value="<%=s.getEmail()%>">
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Address</label>
+			<input type="text" class="form-control" id="exampleInputPassword1" name="address" value="<%=s.getAddress()%>">
+		</div>
+		<div class="mb-3">
+			<label for="exampleInputPassword1" class="form-label">Cell
+				Number</label> <input type=""text"" class="form-control"
+				id="exampleInputPassword1" name="cell" value="<%=s.getCell()%>">
+		</div>
+
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
+
+
+
+
+
+<jsp:include page="footer.jsp" />
