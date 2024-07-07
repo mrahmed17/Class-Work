@@ -1,5 +1,6 @@
 <jsp:include page="header.jsp" />
 
+<<<<<<< HEAD
 <div class="text-center text-success">
 	<h1>Hello Babies!!</h1>
 	<h2>Hello Babies!!</h2>
@@ -22,6 +23,13 @@
 	<h5>Hello Babies!!</h5>
 	<h6>Hello Babies!!</h6>
 
+=======
+<div class="container">
+
+<h1> Hello Dear "User Name"</h1>
+
+	<%=new java.util.Date()%>
+>>>>>>> c387b4cf7e0ce174b4ec283f76547188db82d56f
 </div>
 
 

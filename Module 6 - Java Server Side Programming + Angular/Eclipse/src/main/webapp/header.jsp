@@ -15,7 +15,11 @@
 	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 	crossorigin="anonymous"></script>
 </head>
+<<<<<<< HEAD
 <body class="fixed-top">
+=======
+<body>
+>>>>>>> c387b4cf7e0ce174b4ec283f76547188db82d56f
 
 	<nav class="navbar navbar-expand-lg bg-warning">
 		<div class="container-fluid ">
@@ -36,16 +40,28 @@
 						href="viewallstudent.jsp">Registered Student</a></li>
 					<li class="nav-item dropdown"><a
 						class="nav-link dropdown-toggle" href="#" role="button"
+<<<<<<< HEAD
 						data-bs-toggle="dropdown" aria-expanded="false"> Add Course </a>
 						<ul class="dropdown-menu bg-warning">
 							<li><a class="dropdown-item" href="#">Action</a></li>
 							<li><a class="dropdown-item" href="#">Another action</a></li>
+=======
+						data-bs-toggle="dropdown" aria-expanded="false">View Course </a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Full Stack JAVA</a></li>
+>>>>>>> c387b4cf7e0ce174b4ec283f76547188db82d56f
 							<li><hr class="dropdown-divider"></li>
-							<li><a class="dropdown-item" href="#">Something else
-									here</a></li>
+							<li><a class="dropdown-item" href="#">Network Engineer</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Pro at WPDF</a></li>
 						</ul></li>
+<<<<<<< HEAD
 					<li class="nav-item"><a class="nav-link"
 						href="viewallstudent.jsp">Join Now</a></li>
+=======
+					<li class="nav-item"><a class="nav-link">Join with us</a>
+					</li>
+>>>>>>> c387b4cf7e0ce174b4ec283f76547188db82d56f
 				</ul>
 				<form class="d-flex" role="search">
 					<input class="form-control me-2" type="search" placeholder="Search"
