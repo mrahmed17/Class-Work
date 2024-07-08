@@ -30,3 +30,6 @@ Tips: If error occurs on the command
 
 Note: (with module function in this project)
 11. ng new projectname --standalone false
+
+Todays Helping Link: 
+https://v17.angular.io/tutorial/first-app/first-app-lesson-14
