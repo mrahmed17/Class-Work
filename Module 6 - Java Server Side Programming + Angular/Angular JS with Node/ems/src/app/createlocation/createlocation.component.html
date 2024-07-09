@@ -1,0 +1,40 @@
+<p>createlocation works!</p>
+
+<div class="container">
+  <form [formGroup]="formValue">
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="text" class="form-control" formControlName="name">
+
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">City</label>
+      <input type="text" class="form-control" formControlName="city">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">State</label>
+      <input type="text" class="form-control" formControlName="state">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Photo</label>
+      <input type="text" class="form-control" formControlName="photo">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Available Units</label>
+      <input type="text" class="form-control" formControlName="availableUnits">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Wifi</label>
+      <input type="checkbox" class="form-control" formControlName="wifi">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Laundry</label>
+      <input type="checkbox" class="form-control" formControlName="laundry">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="createLocation()">Submit</button>
+  </form>
+</div>

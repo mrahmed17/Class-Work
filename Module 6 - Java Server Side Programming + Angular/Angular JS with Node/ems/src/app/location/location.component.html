@@ -1,0 +1,24 @@
+<h1 class="text-center text-danger">Employee Details</h1>
+
+<div class="container">
+  <table class="table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Avilable Units</th>
+      <th>Action Button</th>
+    </tr>
+
+    <tr *ngFor="let location of locations | async">
+      <td>{{location.name}}</td>
+      <td>{{location.city}}</td>
+      <td>{{location.state}}</td>
+      <td>{{location.availableUnits}}</td>
+      <td>
+        <button class="btn btn-warning">Edit</button>
+        <button class="btn btn-danger" (click)="deleteLocation(location.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>
