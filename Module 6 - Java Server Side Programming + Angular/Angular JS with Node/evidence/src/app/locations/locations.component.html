@@ -1,0 +1,22 @@
+<p>locations works!</p>
+
+<div class="container">
+  <table class="table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>State</th>
+      <th>AvilableUnits</th>
+    </tr>
+
+    <tr *ngFor="let location of locations | async">
+      <td>{{location.name}}</td>
+      <td>{{location.city}}</td>
+      <td>{{location.state}}</td>
+      <td>{{location.availableUnits}}</td>
+    </tr>
+
+  </table>
+
+
+</div>

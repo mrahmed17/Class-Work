@@ -1,0 +1,47 @@
+<p>createlocation works!</p>
+
+
+<div class="container">
+  <form [formGroup]="formValue">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+        formControlName="name">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">City</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="city">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">State</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="state">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Photo</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="photo">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Unit</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="availableUnits">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">WiFi</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="wifi" value="true">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Laundry</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" formControlName="laundry" value="true">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary" (click)="createLocation()">Save</button>
+  </form>
+
+
+</div>
