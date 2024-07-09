@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LocationsService } from '../locations.service';
+import { LocationsService } from './locations.service';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 

@@ -49,3 +49,11 @@ Link: https://v17.angular.io/tutorial/first-app/first-app-lesson-14
 
 1. npm install -g json-server (For install json api on project)
 2. db.json (create db.json if db.json is not available on project)
+For db server: json-server --watch db.json
+
+
+Angular Program Connection Follow:
+=====================================
+1. Service => Url (Controller)
+2. component => service (Model)
+3. Html => component (View)

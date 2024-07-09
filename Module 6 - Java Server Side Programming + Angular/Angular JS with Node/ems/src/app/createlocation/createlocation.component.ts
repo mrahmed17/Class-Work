@@ -1,45 +1,44 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from 'express';
-import { Location } from '../locations/location.model';
+import { LocationService } from '../location/location.service';
+import { Route, Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { LocationsService } from '../locations/locations.service';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Location } from '../location/location.model';
 
 @Component({
   selector: 'app-createlocation',
   templateUrl: './createlocation.component.html',
   styleUrl: './createlocation.component.css'
 })
-  
-export class CreatelocationComponent implements OnInit{
+export class CreatelocationComponent implements OnInit {
+
   location: Location = new Location();
-  formValue!: FormGroup;
-  submited = false;
+  formValue !: FormGroup;
+  locationData: any;
 
-
-  constructor(
-  private locationService: LocationsService,
-  private router: Router,
-  private httpClient: HttpClient,
-  private formBuilder:FormBuilder
+  constructor
+    (private locationService: LocationService,
+    private router: Router,
+    private httpClient: HttpClient,
+    private formBuilder: FormBuilder
   ) {
 
   }
 
   ngOnInit(): void {
-    // this.formValue = this.formBuilder.group({
-    //   name:[''],  
-    //   city:[''],  
-    //   state:[''],  
-    //   photo:[''],  
-    //   availableUnits:[''],  
-    //   wifi:[''],  
-    //   laundry:[''],  
-    //   })
+    this.formValue = this.formBuilder.group({
+      name: [''],
+      city: [''],
+      state: [''],
+      photo: [''],
+      availableUnits: [''],
+      wifi: [false],
+      laundry: [false]
+    }
+    );
   }
 
-
-  createLocation() { 
+  createLocation() {
     this.location.name = this.formValue.value.name;
     this.location.city = this.formValue.value.city;
     this.location.state = this.formValue.value.state;
@@ -53,25 +52,13 @@ export class CreatelocationComponent implements OnInit{
         next: res => {
           console.log(res);
           this.formValue.reset();
+          this.router.navigate(['/location']);
         },
         error: error => {
           console.log(error);
         }
       }
-      );
-    
-    
-    // .subscribe(
-      //   res => {
-      //     console.log(res);
-      //     this.formValue.reset();
-      //     },
-      //   error => {
-      //     console.log(error);
-      //       }
-
-      // );
+    );
   }
-
 
 }
