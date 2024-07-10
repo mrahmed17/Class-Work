@@ -7,12 +7,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LocationComponent } from './location/location.component';
 import { CreatelocationComponent } from './createlocation/createlocation.component';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { UpdatelocationComponent } from './updatelocation/updatelocation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LocationComponent,
-    CreatelocationComponent
+    CreatelocationComponent,
+    UpdatelocationComponent
   ],
   imports: [
     BrowserModule,
@@ -22,8 +24,10 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 
   ],
   providers: [
-    //provideClientHydration()
-    provideHttpClient(withFetch())
+    // provideClientHydration(),
+    provideHttpClient(
+      withFetch()
+    )
   ],
   bootstrap: [AppComponent]
 })

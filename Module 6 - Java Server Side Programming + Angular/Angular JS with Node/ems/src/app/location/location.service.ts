@@ -27,6 +27,14 @@ export class LocationService {
 
   }
 
+  updateLocation(id: string, location: Location): Observable<any>{
+    return this.httpClient.put(this.baseUrl + "/" + id, location);
+  }
+
+  getById(id: string): Observable<any>{
+    return this.httpClient.get(this.baseUrl + "/" + id);
+  }
+
 
 
 }
