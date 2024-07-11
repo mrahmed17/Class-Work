@@ -22,7 +22,8 @@ export class LocationService {
 
   deleteLocation(id: string): Observable<any>{
     return this.httpClient.delete(this.baseUrl + "/" + id);
-    //http://localhost:3000/locations/id  this is the sample of above delete method
+    //http://localhost:3000/locations/id
+    //this is the sample of above delete method
 
 
   }

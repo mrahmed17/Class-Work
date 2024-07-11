@@ -17,7 +17,7 @@ export class UpdatelocationComponent implements OnInit{
   constructor(
     private locationService: LocationService,
     private router: Router,
-    private route: ActivatedRoute,
+    private route: ActivatedRoute
   ) {
     
 }

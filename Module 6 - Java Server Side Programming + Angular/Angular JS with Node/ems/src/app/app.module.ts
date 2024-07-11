@@ -3,9 +3,9 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LocationComponent } from './location/location.component';
 import { CreatelocationComponent } from './createlocation/createlocation.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { UpdatelocationComponent } from './updatelocation/updatelocation.component';
 
@@ -14,17 +14,16 @@ import { UpdatelocationComponent } from './updatelocation/updatelocation.compone
     AppComponent,
     LocationComponent,
     CreatelocationComponent,
-    UpdatelocationComponent
+    UpdatelocationComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule
-
   ],
   providers: [
-    // provideClientHydration(),
+    provideClientHydration(),
     provideHttpClient(
       withFetch()
     )

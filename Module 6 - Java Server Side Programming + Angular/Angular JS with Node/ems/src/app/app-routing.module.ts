@@ -5,9 +5,10 @@ import { CreatelocationComponent } from './createlocation/createlocation.compone
 import { UpdatelocationComponent } from './updatelocation/updatelocation.component';
 
 const routes: Routes = [
-  {path: 'location', component: LocationComponent},
-  {path: 'createlocation', component: CreatelocationComponent},
-  {path: 'updatelocaion/:id', component: UpdatelocationComponent}
+{path: 'location', component:LocationComponent},
+{path: 'createlocation', component:CreatelocationComponent},
+{path: 'updatelocation/:id', component:UpdatelocationComponent},
+
 ];
 
 @NgModule({

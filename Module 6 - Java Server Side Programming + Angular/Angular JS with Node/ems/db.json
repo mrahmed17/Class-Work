@@ -111,22 +111,12 @@
       "laundry": "Yes"
     },
     {
-      "id": "f4fc",
-      "name": "sdgs",
-      "city": "sdfgsdf",
-      "state": "gsdgsdf",
-      "photo": "sdfg",
-      "availableUnits": "sdfgsd",
-      "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "09d7",
-      "name": "d",
-      "city": "df",
-      "state": "gh",
-      "photo": "jk",
-      "availableUnits": "52",
+      "id": "bd66",
+      "name": "Tamim Ahmed Raju",
+      "city": "Dhaka",
+      "state": "Bangladesh ",
+      "photo": "No",
+      "availableUnits": "54",
       "wifi": true,
       "laundry": true
     }

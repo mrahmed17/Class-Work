@@ -1,7 +1,4 @@
 
-
-
-
 export class Location {
 
     id: string | undefined;
