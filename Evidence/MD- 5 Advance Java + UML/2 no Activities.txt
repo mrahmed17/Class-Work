@@ -1,0 +1,55 @@
+(Start)
+   |
+   v
+[Register Customer]
+   |
+   v
+[Record Customer Requirements]
+   |
+   v
+[Refer to Flight Timetables, Hotel Locations, Holiday Agencies]
+   |
+   v
+[Match Customer Requirements]
+   |
+   v
+[Is Specific Requirement Available?]
+  / \
+Yes   No
+ |     |
+ v     v
+[Make Bookings]  [Advise Customer on Alternatives]
+   |              /
+   v             v
+[Offer Holiday Insurance and Car Hire]
+   |
+   v
+[Prepare Itinerary Schedule]
+   |
+   v
+[Is Itinerary Accepted?]
+  / \
+Yes   No
+ |     |
+ v     v
+[Proceed to Billing]  [Revise Itinerary]
+   |
+   v
+[Bill Customer]
+   |
+   v
+[Payment Method]
+  / | \
+Full  Non-Refundable Deposit  Credit Card Payment (+1.5% Commission)
+Payment       (Provisional Booking)
+   |
+   v
+[Has Full Payment Been Received?]
+  / \
+Yes   No
+ |     |
+ v     v
+[Confirm Booking and Provide Receipt] [Await Full Payment]
+   |
+   v
+(End)
