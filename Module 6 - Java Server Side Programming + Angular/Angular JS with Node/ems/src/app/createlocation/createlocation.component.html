@@ -1,5 +1,4 @@
-<h1 class="text-center text-danger">Add New Location</h1>
-
+<h1 class="container text-center text-danger">Registration Form </h1>
 <div class="container">
   <form [formGroup]="formValue">
 
@@ -8,6 +7,7 @@
       <input type="text" class="form-control" formControlName="name">
 
     </div>
+
     <div class="mb-3">
       <label for="exampleInputPassword1" class="form-label">City</label>
       <input type="text" class="form-control" formControlName="city">
@@ -21,21 +21,22 @@
       <input type="text" class="form-control" formControlName="photo">
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Available Units</label>
+      <label for="exampleInputPassword1" class="form-label">Unit</label>
       <input type="text" class="form-control" formControlName="availableUnits">
     </div>
 
     <div class="mb-3 form-check">
-      <label for="exampleInputPassword1" class="form-label">Wifi</label>
       <input type="checkbox" class="form-check-input" formControlName="wifi">
+      <label for="exampleInputPassword1" class="form-label">WiFi</label>
+
     </div>
 
     <div class="mb-3 form-check">
-      <label for="exampleInputPassword1" class="form-label">Laundry</label>
       <input type="checkbox" class="form-check-input" formControlName="laundry">
+      <label for="exampleInputPassword1" class="form-label">Laundry</label>
     </div>
 
-    <button type="submit" class="btn btn-primary m-2" (click)="createLocation()">Submit</button>
-    <button type="reset" class="btn btn-primary m-2">cancel</button>
+    <button type="submit" class="btn btn-primary" (click)=" createLocation()">Submit</button>
   </form>
+
 </div>

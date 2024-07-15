@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Students List</h2>
+  <ul class="list-group">
+    <li *ngFor="let student of students" class="list-group-item d-flex justify-content-between align-items-center">
+      <div>
+        <strong>Name: {{ student.name }}</strong> ,Email: {{ student.email }}
+        <div>
+          <em>Location: </em> {{ student.location.name }}, {{ student.location.city }} <br>
+          <em>Cell No: </em> {{ student.cellNo}}
+        </div>
+      </div>
+      <div>
+        <button class="btn btn-sm btn-danger me-2" (click)="deleteStudent(student.id)">Delete</button>
+        <button class="btn btn-sm btn-primary" (click)="editStudent(student)">Edit</button>
+      </div>
+    </li>
+  </ul>
+</div>

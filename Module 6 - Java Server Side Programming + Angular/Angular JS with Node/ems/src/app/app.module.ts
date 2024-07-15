@@ -8,6 +8,11 @@ import { CreatelocationComponent } from './createlocation/createlocation.compone
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { UpdatelocationComponent } from './updatelocation/updatelocation.component';
+import { ViewstudentComponent } from './student/viewstudent/viewstudent.component';
+import { CreatestudentComponent } from './student/createstudent/createstudent.component';
+import { UpdatestudentComponent } from './student/updatestudent/updatestudent.component';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -15,12 +20,17 @@ import { UpdatelocationComponent } from './updatelocation/updatelocation.compone
     LocationComponent,
     CreatelocationComponent,
     UpdatelocationComponent,
+    ViewstudentComponent,
+    CreatestudentComponent,
+    UpdatestudentComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule,
   ],
   providers: [
     provideClientHydration(),
