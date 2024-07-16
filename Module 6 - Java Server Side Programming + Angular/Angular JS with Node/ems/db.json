@@ -1,4 +1,12 @@
-{
+  {
+  "user": [
+    {
+      "id": "1",
+      "name": "Raju Ahmed",
+      "email": "raju@gmail.com",
+      "password": "123456"
+    }
+  ],
   "locations": [
     {
       "id": "0",
@@ -99,26 +107,7 @@
       "availableUnits": 6,
       "wifi": true,
       "laundry": true
-    },
-    {
-      "id": "5987",
-      "name": "Shabab",
-      "city": "Kollanpur ",
-      "state": "Dhaka",
-      "photo": "No",
-      "availableUnits": "5",
-      "wifi": "No",
-      "laundry": "Yes"
-    },
-    {
-      "id": "bd66",
-      "name": "Tamim Ahmed Raju",
-      "city": "Dhaka",
-      "state": "Bangladesh ",
-      "photo": "No",
-      "availableUnits": "54",
-      "wifi": true,
-      "laundry": true
     }
+ 
   ]
 }

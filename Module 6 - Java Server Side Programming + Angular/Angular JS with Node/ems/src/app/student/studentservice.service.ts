@@ -16,12 +16,18 @@ export class StudentserviceService {
   ) { }
 
 
+
+
   viewAllStudent(): Observable<any> {
+
     return this.http.get(this.baseUrl);
+
   }
 
   createStudent(student: StudentModel): Observable<StudentModel> {
+
     return this.http.post<StudentModel>(this.baseUrl, student);
+
   }
 
 

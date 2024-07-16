@@ -12,17 +12,27 @@ import { ViewstudentComponent } from './student/viewstudent/viewstudent.componen
 import { CreatestudentComponent } from './student/createstudent/createstudent.component';
 import { UpdatestudentComponent } from './student/updatestudent/updatestudent.component';
 import { RouterModule } from '@angular/router';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { HomeComponent } from './home/home.component';
+import { LogoutComponent } from './logout/logout.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
     LocationComponent,
     CreatelocationComponent,
     UpdatelocationComponent,
     ViewstudentComponent,
     CreatestudentComponent,
-    UpdatestudentComponent
+    UpdatestudentComponent,
+    LoginComponent,
+    RegistrationComponent,
+    HomeComponent,
+    LogoutComponent,
+    UserprofileComponent,     
   ],
 
   imports: [
@@ -30,7 +40,8 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule,
+    RouterModule, 
+    AppRoutingModule 
   ],
   providers: [
     provideClientHydration(),
