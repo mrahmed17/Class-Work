@@ -1,0 +1,29 @@
+<div class="container">
+  <form [formGroup]="studentForm" (ngSubmit)="createStudent()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input id="name" type="text" class="form-control" formControlName="name">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input id="email" type="email" class="form-control" formControlName="email">
+    </div>
+
+    <div class="mb-3">
+      <label for="cellNo" class="form-label">Cell Number</label>
+      <input id="cellNo" type="text" class="form-control" formControlName="cellNo">
+    </div>
+
+    <div class="mb-3" formGroupName="location">
+      <div class="invalid-feedback">Please select a location.</div>
+      <label for="location" class="form-label">Location:</label>
+      <select id="location" formControlName="name" class="form-select" required>
+        <option *ngFor="let loc of locations" [ngValue]="loc.name">{{loc.name}}</option>
+      </select>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>

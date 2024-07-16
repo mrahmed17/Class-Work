@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Update Student Details</h2>
+  <form [formGroup]="studentForm" (ngSubmit)="updateStudent()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="name">
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" formControlName="email">
+    </div>
+
+    <div class="mb-3">
+      <label for="cellNo" class="form-label">Cell Number</label>
+      <input type="text" class="form-control" id="cellNo" formControlName="cellNo">
+    </div>
+
+    <div class="mb-3">
+      <label for="location" class="form-label">Location:</label>
+      <select id="location" formControlName="location" class="form-select">
+        <option *ngFor="let loc of locations" [ngValue]="loc">{{ loc.name }}</option>
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update Student</button>
+  </form>
+</div>

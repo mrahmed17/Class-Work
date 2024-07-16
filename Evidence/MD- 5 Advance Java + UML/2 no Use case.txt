@@ -1,0 +1,38 @@
+Actors:
+
+
+Customer
+Admin Staff
+Sales Consultant
+
+Use Cases:
+Register Customer
+Record Requirements
+Match Requirements
+Advise Alternatives
+Make Booking
+Organize Insurance
+Organize Car Hire
+Print Itinerary
+Bill Customer
+Process Payment
+Calculate Total Bill
+Accept Payment
+Process Credit Card Payment
+Issue Receipt
+
+Descriptions:
+Register Customer: The sales consultant registers a new customer in the system.
+Record Requirements: The sales consultant records the travel requirements of the customer.
+Match Requirements: The sales consultant matches customer requirements with available travel options.
+Advise Alternatives: If specific requirements are not available, the sales consultant advises on alternatives.
+Make Booking: The sales consultant makes bookings for the customer.
+Organize Insurance: The sales consultant offers to organize holiday insurance.
+Organize Car Hire: The sales consultant offers to organize car hire.
+Print Itinerary: The sales consultant prints the final itinerary for the customer.
+Bill Customer: The customer is billed for the services.
+Process Payment: The customer makes the payment for the booking.
+Calculate Total Bill: The system calculates the total bill including any commissions.
+Accept Payment: The system accepts payment from the customer.
+Process Credit Card Payment: The system processes the payment if made by credit card, adding the commission.
+Issue Receipt: The system issues a receipt after payment is received.

@@ -1,4 +1,6 @@
 
+
+
 export class Location {
 
     id: string | undefined;
@@ -6,8 +8,8 @@ export class Location {
     city: string | undefined;
     state: string | undefined;
     photo: string | undefined;
-    availableUnits: number | undefined;
-    wifi: boolean | undefined;
-    laundry: boolean | undefined;
+    availableUnits: number| undefined;
+    wifi: boolean| undefined;
+    laundry: boolean| undefined;
 
 }

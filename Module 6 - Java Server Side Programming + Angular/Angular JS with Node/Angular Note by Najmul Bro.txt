@@ -1,0 +1,3 @@
+Fist ea project niben then component generate korben, service generate korben, routing module ea component er path declare korben: path name and sorce diben . HttpModule, FormsModule and ReactiveModule ja ja lage niben app.module.ts ea, json server install korben, json file niben, service file ea ese constractor httpClient ke declare korben, module banaben json to angular model ea push korben, service file ea method banaben(post, put, get or anything what you want), er pore jei component ke view korte chan component.ts theke logic likhe html.ts ea view korben
+
+by the way: json file ready korar pore json server run kore niben.
