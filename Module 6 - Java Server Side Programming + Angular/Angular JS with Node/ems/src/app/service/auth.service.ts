@@ -7,6 +7,7 @@ import { AuthResponse } from '../model/auth-response';
 @Injectable({
   providedIn: 'root'
 })
+  
 export class AuthService {
 
   private baseUrl: string = "http://localhost:3000/user";
@@ -14,7 +15,6 @@ export class AuthService {
   constructor(
     private http: HttpClient
   ) { }
-
 
 
   registration(user: UserModel): Observable<AuthResponse> {
@@ -50,6 +50,7 @@ export class AuthService {
           throw new Error('User not found');
         }
       }),
+
       catchError(err => {
         console.error('Login error', err);
         throw err;
@@ -71,6 +72,19 @@ export class AuthService {
     return localStorage.getItem('token');
   }
 
+storeUserProfile(user: UserModel): void {
+    localStorage.setItem('userProfile', JSON.stringify(user));
+  }
+
+  getUserProfileFromStorage(): UserModel | null {
+    const userProfile = localStorage.getItem('userProfile');
+    return userProfile ? JSON.parse(userProfile) : null;
+  }
+
+  removeUserDetails(){
+    localStorage.clear();
+
+  }
 
 
 

@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
 import { LocationComponent } from './location/location.component';
 import { CreatelocationComponent } from './createlocation/createlocation.component';
 import { UpdatelocationComponent } from './updatelocation/updatelocation.component';
@@ -16,7 +15,6 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 const routes: Routes = [
-
 {path: 'location', component:LocationComponent},
 {path: 'createlocation', component:CreatelocationComponent, canActivate:[AuthGuard]},
 {path: 'updatelocation/:id', component:UpdatelocationComponent, canActivate:[AuthGuard]},
@@ -28,9 +26,7 @@ const routes: Routes = [
 {path: 'home', component:HomeComponent},
 {path: 'logout', component:LogoutComponent},
 {path: 'userprofile', component:UserprofileComponent, canActivate:[AuthGuard]},
-{path: '**', redirectTo: 'login', pathMatch: 'full' },
-
-
+{path: '**', redirectTo: 'login', pathMatch: 'full' }
 
 ];
 

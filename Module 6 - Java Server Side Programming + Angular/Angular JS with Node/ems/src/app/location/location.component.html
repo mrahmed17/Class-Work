@@ -8,13 +8,12 @@
         <th>State</th>
         <th>Unit</th>
         <th>Photo</th>
-
         <th>Action</th>
       </tr>
     </thead>
 
     <tbody>
-      <tr *ngFor="let location of locations |async">
+      <tr *ngFor="let location of locations | async">
         <td>{{location.name}}</td>
         <td>{{location.city}}</td>
         <td>{{location.state}}</td>
@@ -24,15 +23,8 @@
         <td>
           <button class="btn btn-warning m-1 p-1" (click)="updateLocation(location.id)">Edit</button>
           <button class="btn btn-danger m-1 p-1" (click)="deleteLocation(location.id)">Delete</button>
-
         </td>
-
       </tr>
-
     </tbody>
-
-
-
   </table>
-
 </div>

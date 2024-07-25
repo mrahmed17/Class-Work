@@ -8,6 +8,7 @@ import { Location } from './location.model';
 @Injectable({
   providedIn: 'root'
 })
+  
 export class LocationService {
 
   baseUrl: string = "http://localhost:3000/locations";

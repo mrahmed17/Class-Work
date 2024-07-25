@@ -33,11 +33,8 @@ export class LocationComponent implements OnInit {
         },
         error: error => {
           console.log(error);
-
         }
-
       });
-
   }
 
 
