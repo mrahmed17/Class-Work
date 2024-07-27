@@ -1,9 +1,10 @@
 <div class="container">
+  <h2 class="container text-center text-success">Registered Location List</h2>
   <table class="table table-striped">
 
     <thead>
       <tr>
-        <th>Name</th>
+        <th>Location Name</th>
         <th>City</th>
         <th>State</th>
         <th>Unit</th>
@@ -21,7 +22,7 @@
         <td><img [src]="location.photo" alt="{{location.name}}" style="width: 50px; height: auto;"></td>
 
         <td>
-          <button class="btn btn-warning m-1 p-1" (click)="updateLocation(location.id)">Edit</button>
+          <button class="btn btn-info text-white me-1 p-1" (click)="updateLocation(location.id)">Edit</button>
           <button class="btn btn-danger m-1 p-1" (click)="deleteLocation(location.id)">Delete</button>
         </td>
       </tr>

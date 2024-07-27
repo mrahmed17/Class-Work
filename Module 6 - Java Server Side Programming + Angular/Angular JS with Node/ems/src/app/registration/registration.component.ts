@@ -18,7 +18,7 @@ export class RegistrationComponent {
   constructor(
     private authService: AuthService,
     private router: Router,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
 
   ) {
     this.regForm = this.formBuilder.group({
@@ -50,7 +50,7 @@ export class RegistrationComponent {
       });
     }
     else{
-      alert("Complte mandatory Field");
+      alert("Field Complete Mandatory");
     }
   }
 
