@@ -1,12 +1,19 @@
-<div class="container">
-  <h2 class="container text-center text-success">User Profile</h2>
-  <div *ngIf="user">
-    <p><strong>Name:</strong> {{ user.name }}</p>
-    <p><strong>Email:</strong> {{ user.email }}</p>
+<div class="welcome-container">
+  <div *ngIf="user" class="profile-card">
+    <img [src]="user.profilePhoto" alt="Profile Photo" class="profile-photo" />
+    <div class="user-details">
+      <h3 class="text-info">Welcome, {{ user.name }}!</h3>
+      <p class="text-danger"><strong>Email:</strong> {{ user.email }}</p>
+    </div>
+  </div>
 
-    <!-- Add more fields as needed -->
+  <div class="additional-info">
+    <p>We're glad to have you back!</p>
+
+    <a routerLink="/home" class="btn btn-primary">Go to Dashboard</a>
   </div>
-  <div *ngIf="!user">
-    <p>Loading user profile...</p>
-  </div>
+</div>
+
+<div *ngIf="!user">
+  <p>Loading User Profile...</p>
 </div>

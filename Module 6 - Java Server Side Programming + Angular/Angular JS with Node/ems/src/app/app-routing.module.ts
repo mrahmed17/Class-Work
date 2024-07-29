@@ -15,15 +15,15 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 const routes: Routes = [
-{path: 'location', component:LocationComponent},
+{path: 'home', component:HomeComponent},
+{path: 'location', component:LocationComponent, canActivate:[AuthGuard]},
 {path: 'createlocation', component:CreatelocationComponent, canActivate:[AuthGuard]},
 {path: 'updatelocation/:id', component:UpdatelocationComponent, canActivate:[AuthGuard]},
-{path: 'student', component:ViewstudentComponent},
-{path: 'createstudent', component:CreatestudentComponent},
-{path: 'updatestudent/:id', component:UpdatestudentComponent},
-{path: 'reg', component:RegistrationComponent},
+{path: 'student', component:ViewstudentComponent, canActivate:[AuthGuard]},
+{path: 'createstudent', component:CreatestudentComponent, canActivate:[AuthGuard]},
+{path: 'updatestudent/:id', component:UpdatestudentComponent, canActivate:[AuthGuard]},
+{path: 'reg', component:RegistrationComponent, canActivate:[AuthGuard]},
 {path: 'login', component:LoginComponent},
-{path: 'home', component:HomeComponent},
 {path: 'logout', component:LogoutComponent},
 {path: 'userprofile', component:UserprofileComponent, canActivate:[AuthGuard]},
 {path: '**', redirectTo: 'login', pathMatch: 'full' },

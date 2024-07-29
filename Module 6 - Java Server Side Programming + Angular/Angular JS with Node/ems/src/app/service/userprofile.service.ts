@@ -11,7 +11,10 @@ export class UserprofileService {
 
   private baseUrl = 'http://localhost:3000/user';
 
-  constructor(private http: HttpClient, private authService: AuthService) { }
+  constructor(
+    private http: HttpClient,
+    private authService: AuthService
+  ) { }
 
   getUserProfile(): Observable<UserModel | null> {
     return of(this.authService.getUserProfileFromStorage());

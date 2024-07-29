@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { UserModel } from '../model/user.model';
-import { FormBuilder, FormGroup } from '@angular/forms';
 import { UserprofileService } from '../service/userprofile.service';
 import { Router } from '@angular/router';
 
@@ -14,7 +13,6 @@ export class UserprofileComponent {
   user!: UserModel;
 
   constructor(
-    
     private userProfileService: UserprofileService,
     private router: Router
   ) {}
@@ -31,8 +29,15 @@ export class UserprofileComponent {
         }
       },
       error: (err) => {
-        console.error('Error loading user profile:', err);
+        console.error('Error, loading user profile:', err);
       }
     });
   }
+
+  // ngOnInit(): void {
+  //   this.userProfileService.getUserProfile().subscribe(profile => {
+  //     this.user = profile;
+  //      });
+  //    }
+
 }

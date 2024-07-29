@@ -81,19 +81,22 @@
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+            <li><a class="dropdown-item" href="/user">View Registered Profile</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Delete Profile</a></li>
+            <li><a class="dropdown-item" href="/userprofile">Current User Profile</a></li>
           </ul>
         </li>
       </ul>
-      <form class="d-flex" role="search">
+      <form class="d-flex me-4" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
-        <a class="btn btn-outline-success" href="/logout">Logout</a>
       </form>
+      <div>
+        <a class="btn btn-outline-info me-2" href="/login">Log In</a>
+        <a class="btn btn-outline-warning me-2" href="/logout">Log Out</a>
+      </div>
     </div>
   </div>
 </nav>
@@ -103,34 +106,6 @@
 <div class="container">
   <router-outlet></router-outlet>
 </div>
-
-
-
-<!-- <div class="container">
-    <h1 class="text-center text-danger"> Content Title Show Here</h1>
-  </div>
-
-  <div class="text-center text-success">
-    <h1>Hello Dear "User Name Show Here"!!</h1>
-    <h2>Hello Dear "User Name Show Here"!!</h2>
-
-    <h3>Hello Dear "User Name Show Here"!!</h3>
-    <h4>Hello Dear "User Name Show Here"!!</h4>
-
-    <h5>Hello Dear "User Name Show Here"!!</h5>
-    <h6>Hello Dear "User Name Show Here"!!</h6>
-  </div>
-
-  <div class="text-center text-primary">
-    <h1>Hello Dear "User Name Show Here"!!</h1>
-    <h2>Hello Dear "User Name Show Here"!!</h2>
-
-    <h3>Hello Dear "User Name Show Here"!!</h3>
-    <h4>Hello Dear "User Name Show Here"!!</h4>
-
-    <h5>Hello Dear "User Name Show Here"!!</h5>
-    <h6>Hello Dear "User Name Show Here"!!</h6>
-  </div> -->
 
 
 <!-- Footer -->

@@ -1,10 +1,10 @@
-<h2 class="container text-center text-success">Location Registration Form </h2>
+<h2 class="container text-center text-success">Create Location</h2>
 
 <div class="container">
   <form [formGroup]="formValue">
 
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Name</label>
+      <label for="exampleInputEmail1" class="form-label">Location Name</label>
       <input type="text" class="form-control" formControlName="name">
 
     </div>
@@ -18,11 +18,11 @@
       <input type="text" class="form-control" formControlName="state">
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Photo</label>
-      <input type="text" class="form-control" formControlName="photo">
+      <label for="exampleInputPassword1" class="form-label">Photo URL</label>
+      <input type="text" class="form-control" formControlName="profilePhoto">
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Unit</label>
+      <label for="exampleInputPassword1" class="form-label">Available Units</label>
       <input type="text" class="form-control" formControlName="availableUnits">
     </div>
 

@@ -5,14 +5,20 @@
       "name": "Raju Ahmed",
       "email": "raju@gmail.com",
       "password": "123456"
+    },
+    {
+      "id": "73b4",
+      "name": "Md. Raju",
+      "email": "tamim@gmail.com",
+      "password": "123456"
     }
   ],
   "locations": [
     {
       "id": "0",
-      "name": "Dhaka North",
+      "name": "Lalbagh",
       "city": "Dhaka",
-      "state": "Lalbagh",
+      "state": "Bangladesh",
       "photo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
       "availableUnits": "40",
       "wifi": true,
@@ -20,112 +26,76 @@
     },
     {
       "id": "1",
-      "name": "A113 Transitional Housing",
-      "city": "Santa Monica",
-      "state": "CA",
-      "photo": "https://angular.io/assets/images/tutorials/faa/brandon-griggs-wR11KBaB86U-unsplash.jpg",
-      "availableUnits": 0,
-      "wifi": false,
+      "name": "Azimpur",
+      "city": "Dhaka",
+      "state": "Bangladesh",
+      "photo": "https://angular.io/assets/images/tutorials/faa/saru-robert-9rP3mxf8qWI-unsplash.jpg",
+      "availableUnits": "25",
+      "wifi": true,
       "laundry": true
     },
     {
       "id": "2",
-      "name": "Warm Beds Housing Support",
-      "city": "Juneau",
-      "state": "AK",
+      "name": "Mirpur 10",
+      "city": "Dhaka",
+      "state": "Bangladesh",
       "photo": "https://angular.io/assets/images/tutorials/faa/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg",
-      "availableUnits": 1,
-      "wifi": false,
-      "laundry": false
+      "availableUnits": "18",
+      "wifi": true,
+      "laundry": true
     },
     {
       "id": "3",
-      "name": "Homesteady Housing",
-      "city": "Chicago",
-      "state": "IL",
+      "name": "Mohammadpur",
+      "city": "Dhaka",
+      "state": "Bangladesh",
       "photo": "https://angular.io/assets/images/tutorials/faa/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
-      "availableUnits": 1,
+      "availableUnits": "19",
       "wifi": true,
-      "laundry": false
+      "laundry": true
     },
     {
       "id": "4",
-      "name": "Happy Homes Group",
-      "city": "Gary",
-      "state": "IN",
+      "name": "Panthapath",
+      "city": "Dhaka",
+      "state": "Bangladesh",
       "photo": "https://angular.io/assets/images/tutorials/faa/krzysztof-hepner-978RAXoXnH4-unsplash.jpg",
-      "availableUnits": 1,
+      "availableUnits": "24",
       "wifi": true,
-      "laundry": false
+      "laundry": true
     },
     {
       "id": "5",
-      "name": "Dhaka North",
+      "name": "Malibag",
       "city": "Dhaka",
-      "state": "Lalbagh",
+      "state": "Bangladesh",
       "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-JvQ0Q5IkeMM-unsplash.jpg",
-      "availableUnits": "20",
+      "availableUnits": "28",
       "wifi": true,
       "laundry": true
     },
     {
       "id": "6",
-      "name": "Seriously Safe Towns",
-      "city": "Oakland",
-      "state": "CA",
+      "name": "Kollanpur",
+      "city": "Dhaka",
+      "state": "Bangladesh",
       "photo": "https://angular.io/assets/images/tutorials/faa/phil-hearing-IYfp2Ixe9nM-unsplash.jpg",
-      "availableUnits": 5,
+      "availableUnits": "26",
       "wifi": true,
       "laundry": true
     },
     {
-      "id": "7",
-      "name": "Hopeful Housing Solutions",
-      "city": "Oakland",
-      "state": "CA",
+      "id": "330e",
+      "name": "Dhanmondi",
+      "city": "Dhaka",
+      "state": "Bangladesh",
       "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
-      "availableUnits": 2,
-      "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "8",
-      "name": "Seriously Safe Towns",
-      "city": "Oakland",
-      "state": "CA",
-      "photo": "https://angular.io/assets/images/tutorials/faa/saru-robert-9rP3mxf8qWI-unsplash.jpg",
-      "availableUnits": 10,
-      "wifi": false,
-      "laundry": false
-    },
-    {
-      "id": "9",
-      "name": "Capital Safe Towns",
-      "city": "Portland",
-      "state": "OR",
-      "photo": "https://angular.io/assets/images/tutorials/faa/webaliser-_TPTXZd9mOo-unsplash.jpg",
-      "availableUnits": 6,
+      "availableUnits": "32",
       "wifi": true,
       "laundry": true
     }
   ],
   "students": [
-    {
-      "id": "1",
-      "name": "Raju",
-      "email": "raju@gmail.com",
-      "cellNo": "123456",
-      "location": {
-        "id": "0",
-        "name": "Dhaka North",
-        "city": "Dhaka",
-        "state": "Lalbagh",
-        "photo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
-        "availableUnits": "40",
-        "wifi": true,
-        "laundry": true
-      }
-    },
     {
       "id": "f9cb",
       "name": "Md. Raju Ahmed",
@@ -133,11 +103,43 @@
       "cellNo": "12345",
       "location": {
         "id": "0",
-        "name": "Dhaka North",
+        "name": "Lalbagh",
         "city": "Dhaka",
-        "state": "Lalbagh",
+        "state": "Bangladesh",
         "photo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
         "availableUnits": "40",
+        "wifi": true,
+        "laundry": true
+      }
+    },
+    {
+      "id": "bfeb",
+      "name": "Sanullah",
+      "email": "sanaullahtarget2030@gmail.com",
+      "cellNo": "22564894",
+      "location": {
+        "id": "330e",
+        "name": "Dhanmondi",
+        "city": "Dhaka",
+        "state": "Bangladesh",
+        "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
+        "availableUnits": "32",
+        "wifi": true,
+        "laundry": true
+      }
+    },
+    {
+      "id": "6c57",
+      "name": "Kutub",
+      "email": "kutub@gmail.com",
+      "cellNo": "6484",
+      "location": {
+        "id": "330e",
+        "name": "Dhanmondi",
+        "city": "Dhaka",
+        "state": "Bangladesh",
+        "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
+        "availableUnits": "32",
         "wifi": true,
         "laundry": true
       }
