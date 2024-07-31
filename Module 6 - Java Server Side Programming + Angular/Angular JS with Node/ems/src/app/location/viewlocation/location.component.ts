@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LocationService } from './location.service';
+import { LocationService } from '../../service/location.service';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 
@@ -38,8 +38,8 @@ export class LocationComponent implements OnInit {
   }
 
 
-  updateLocation(id:string){
-    this.router.navigate(['updatelocation',id]);
+  updateLocation(id: string) {
+    this.router.navigate(['updatelocation', id]);
   }
 
 

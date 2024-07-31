@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { LocationService } from '../location/location.service';
+import { LocationService } from '../../service/location.service';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { Location } from '../location/location.model';
+import { Location } from '../../model/location.model';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -21,7 +21,7 @@ export class CreatelocationComponent implements OnInit {
     private router: Router,
     private httpClient: HttpClient,
     private formBuilder: FormBuilder,
-    
+
   ) {
 
   }
@@ -54,22 +54,20 @@ export class CreatelocationComponent implements OnInit {
     this.location.wifi = this.formValue.value.wifi;
     this.location.laundry = this.formValue.value.laundry;
 
-    
+
     this.locationService.createLocation(this.location)
       .subscribe({
-          next: res=>
-          {
-            console.log(res);
-            this.formValue.reset();
-            this.router.navigate(['/location']);
-          },
+        next: res => {
+          console.log(res);
+          this.formValue.reset();
+          this.router.navigate(['/location']);
+        },
 
-          error: error=>
-          {
-            console.log(error);
-          }
+        error: error => {
+          console.log(error);
+        }
 
-        });
+      });
 
   }
 

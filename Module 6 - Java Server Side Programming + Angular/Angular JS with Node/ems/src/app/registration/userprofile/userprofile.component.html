@@ -1,0 +1,28 @@
+<div class="welcome-container">
+
+  <div *ngIf="user" class="profile-card">
+
+    <img [src]="user.profilePhoto" alt="{{user.name}}" class="profile-photo" />
+
+    <div class="user-details">
+      <h3 class="text-warning">Welcome!</h3>
+      <h3 class="text-info">{{ user.name }}</h3>
+      <p class="text-danger"><strong>Email:</strong> {{ user.email }}</p>
+      <div>
+        <h6>We're glad to have you back!</h6>
+      </div>
+    </div>
+  </div>
+  <div class="additional-info">
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nobis similique, neque magnam perferendis
+      doloremque! Nulla magni veritatis recusandae doloribus necessitatibus similique perspiciatis libero, magnam eius
+      iusto vero expedita! Enim.</p>
+  </div>
+  <div>
+    <a routerLink="/home" class="btn btn-primary">Go to Dashboard</a>
+  </div>
+</div>
+
+<div *ngIf="!user">
+  <p>Loading User Profile...</p>
+</div>

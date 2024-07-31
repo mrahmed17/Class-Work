@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { StudentModel } from '../student.model';
-import { StudentserviceService } from '../studentservice.service';
-import { LocationService } from '../../location/location.service';
+import { StudentModel } from '../../model/student.model';
+import { StudentserviceService } from '../../service/studentservice.service';
+import { LocationService } from '../../service/location.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { Location } from '../../location/location.model';
+import { Location } from '../../model/location.model';
 
 
 
@@ -29,9 +29,9 @@ export class UpdatestudentComponent {
   ) { }
 
   ngOnInit(): void {
-   
 
-     this.studentId= this.route.snapshot.params['id'];
+
+    this.studentId = this.route.snapshot.params['id'];
 
 
     console.log(this.studentId);

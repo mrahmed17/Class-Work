@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentserviceService } from '../studentservice.service';
-import { LocationService } from '../../location/location.service';
-import { Location } from '../../location/location.model';
-import { StudentModel } from '../student.model';
+import { StudentserviceService } from '../../service/studentservice.service';
+import { LocationService } from '../../service/location.service';
+import { Location } from '../../model/location.model';
+import { StudentModel } from '../../model/student.model';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import {  Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-createstudent',
@@ -23,7 +23,7 @@ export class CreatestudentComponent implements OnInit {
     private studentService: StudentserviceService,
     private locationService: LocationService,
     private formBuilder: FormBuilder,
-    private router:Router
+    private router: Router
   ) {
 
   }
@@ -31,7 +31,7 @@ export class CreatestudentComponent implements OnInit {
 
   ngOnInit(): void {
 
-    
+
     this.loadLocation();
 
     this.studentForm = this.formBuilder.group({

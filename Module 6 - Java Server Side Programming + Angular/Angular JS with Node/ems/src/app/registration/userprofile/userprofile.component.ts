@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { UserModel } from '../model/user.model';
-import { UserprofileService } from '../service/userprofile.service';
+import { UserModel } from '../../model/user.model';
+import { UserprofileService } from '../../service/userprofile.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,16 +9,16 @@ import { Router } from '@angular/router';
   styleUrl: './userprofile.component.css'
 })
 export class UserprofileComponent {
-  
+
   user!: UserModel;
 
   constructor(
     private userProfileService: UserprofileService,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit(): void {
-    this.loadUserProfile();   
+    this.loadUserProfile();
   }
 
   loadUserProfile(): void {

@@ -4,13 +4,15 @@
       "id": "1",
       "name": "Raju Ahmed",
       "email": "raju@gmail.com",
-      "password": "123456"
+      "password": "123456",
+      "profilePhoto": "https://media.istockphoto.com/id/1388912000/photo/smiling-adult-businessman-making-an-advertisement-for-his-company.jpg?s=1024x1024&w=is&k=20&c=1XLMSctfkZ-DkhSEteFYWDLrjgUJPG7i5cQ03peVEdQ="
     },
     {
       "id": "73b4",
       "name": "Md. Raju",
       "email": "tamim@gmail.com",
-      "password": "123456"
+      "password": "123456",
+      "profilePhoto": "https://media.istockphoto.com/id/1346124841/photo/successful-construction-site-worker-thinking.jpg?s=1024x1024&w=is&k=20&c=4SvUvVZDP5JOS7lXFUc05CLyZZQcTGD_kSopYBqsbxc="
     }
   ],
   "locations": [
@@ -140,6 +142,22 @@
         "state": "Bangladesh",
         "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
         "availableUnits": "32",
+        "wifi": true,
+        "laundry": true
+      }
+    },
+    {
+      "id": "3c1b",
+      "name": "Rabiul",
+      "email": "rabiul@gmail.com",
+      "cellNo": "5456",
+      "location": {
+        "id": "3",
+        "name": "Mohammadpur",
+        "city": "Dhaka",
+        "state": "Bangladesh",
+        "photo": "https://angular.io/assets/images/tutorials/faa/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
+        "availableUnits": "19",
         "wifi": true,
         "laundry": true
       }

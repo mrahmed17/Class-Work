@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserModel } from '../model/user.model';
 
+
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
@@ -13,7 +14,7 @@ import { UserModel } from '../model/user.model';
 
 export class RegistrationComponent {
 
-   regForm: FormGroup;
+  regForm: FormGroup;
   selectedFile: File | null = null;
 
   constructor(
@@ -57,7 +58,7 @@ export class RegistrationComponent {
         }
       });
     }
-    else{
+    else {
       alert("Field Complete Mandatory");
     }
   }

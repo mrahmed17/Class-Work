@@ -11,8 +11,12 @@
     </div>
     <div class="form-group">
       <label for="profilePhoto" class="form-label">Profile Photo</label>
-      <input type="file" id="profilePhoto" (change)="onFileSelected($event)" formControlName="profilePhoto">
+      <input type="text" id="profilePhoto" formControlName="profilePhoto" class="form-control" required="required">
     </div>
+    <!-- <div class="form-group">
+      <label for="profilePhoto" class="form-label">Profile Photo</label>
+      <input type="file" id="profilePhoto" (change)="onFileSelected($event)" formControlName="profilePhoto">
+    </div> -->
     <div class="mb-3">
       <label for="password" class="form-label">Password</label>
       <input type="password" id="password" formControlName="password" class="form-control" required="required">

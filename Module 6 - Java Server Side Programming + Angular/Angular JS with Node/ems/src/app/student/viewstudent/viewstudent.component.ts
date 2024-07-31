@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { StudentserviceService } from '../studentservice.service';
-import { LocationService } from '../../location/location.service';
+import { StudentserviceService } from '../../service/studentservice.service';
+import { LocationService } from '../../service/location.service';
 import { forkJoin } from 'rxjs';
-import { StudentModel } from '../student.model';
-import { Location } from '../../location/location.model';
+import { StudentModel } from '../../model/student.model';
+import { Location } from '../../model/location.model';
 import { Router } from '@angular/router';
 
 @Component({
@@ -20,7 +20,7 @@ export class ViewstudentComponent implements OnInit {
     private studentService: StudentserviceService,
     private locationService: LocationService,
     private router: Router
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.loadData();

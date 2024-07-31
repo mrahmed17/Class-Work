@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Location } from '../location/location.model';
-import { LocationService } from '../location/location.service';
+import { Location } from '../../model/location.model';
+import { LocationService } from '../../service/location.service';
 import { ActivatedRoute, Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-updatelocation',

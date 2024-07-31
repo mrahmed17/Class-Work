@@ -1,17 +1,17 @@
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  h3 {
-    text-align: center;
-  }
-  
-  p {
-    font-size: 16px;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+}
 
-  .welcome-container {
+h3 {
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+}
+
+.welcome-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,18 +23,19 @@
   display: flex;
   align-items: center;
   border: 1px solid #ddd;
-  padding: 100px;
+  padding: 60px;
   border-radius: 20px;
-  background-color: #f9f9f9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fbfbfb;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .profile-photo {
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   margin-right: 20px;
+  border-color: black;
 }
 
 .user-details {
@@ -43,16 +44,21 @@
 }
 
 .additional-info {
-  margin-top: 20px;
-  color:darkorange;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: white;
+  color: #0056b3;
   font-weight: bold;
 }
 
 .btn {
+  margin-top: 10px;
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
-  background-color: #007bff;
+  background-color: #009bff;
   border-radius: 6px;
   transition: background-color 0.3s;
 }

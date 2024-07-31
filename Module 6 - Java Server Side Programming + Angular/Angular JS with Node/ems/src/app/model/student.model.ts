@@ -5,7 +5,7 @@ export class StudentModel {
     name!: string;
     email!: string;
     cellNo!: string;
-        
+
     location!: {
 
         id: string | undefined;

@@ -2,13 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { Location } from './location.model';
+import { Location } from '../model/location.model';
 
 
 @Injectable({
   providedIn: 'root'
 })
-  
+
 export class LocationService {
 
   baseUrl: string = "http://localhost:3000/locations";
@@ -27,12 +27,12 @@ export class LocationService {
     return this.httpClient.get<Location[]>(this.baseUrl)
       .pipe(
         catchError(this.handleError)
-    )
+      )
 
   }
 
 
-  private handleError(error:any) {
+  private handleError(error: any) {
     console.error('An error occurred:', error);
     return throwError(() => new Error('test'));
   }

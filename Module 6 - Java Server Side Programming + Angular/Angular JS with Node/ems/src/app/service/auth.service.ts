@@ -1,13 +1,16 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { UserModel } from '../model/user.model';
-import { catchError, map, Observable } from 'rxjs';
 import { AuthResponse } from '../model/auth-response';
+
+import { catchError, map, Observable } from 'rxjs';
+import { UserModel } from '../model/user.model';
+
+
 
 @Injectable({
   providedIn: 'root'
 })
-  
+
 export class AuthService {
 
   private baseUrl: string = "http://localhost:3000/user";
@@ -82,7 +85,7 @@ export class AuthService {
     return userProfile ? JSON.parse(userProfile) : null;
   }
 
-  removeUserDetails(){
+  removeUserDetails() {
     localStorage.clear();
 
   }
